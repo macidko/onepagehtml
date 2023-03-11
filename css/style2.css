@@ -103,18 +103,19 @@ code {
 }
 .tagAttrs {
   width: 90%;
-  margin: 20px auto 20px auto;
+  margin: 20px auto;
+  gap: 1rem;
 }
 .attrs {
   display: flex;
   flex-direction: row;
-  margin-bottom: 20px;
+  gap: 1rem;
 }
 .attrList {
   border: 1px solid red;
   flex: 1;
 }
-.attrShow {
+#attrShow {
   border: 1px solid green;
   flex: 4;
 }
@@ -130,9 +131,21 @@ code {
 .dispNone {
   display: none;
 }
-.attrListUl {
-  padding-inline-start: 20px;
+#attrListUl {
+  padding: 1rem;
+  margin: 0;
   list-style-type: none;
+}
+#attrListUl li {
+  cursor: pointer;
+  text-decoration: underline;
+  text-decoration-style:wavy;
+  text-decoration-color:#999;
+  margin: 1rem 0;
+}
+.attrListH{
+  margin-block-start: 0;
+  margin-block-end: 0;
 }
 .attrListLi{
     cursor: pointer;
