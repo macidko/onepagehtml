@@ -1,139 +1,8 @@
 //CREATE LI TAGS *BEGIN*
-//tag id array
-let tagId = ["comment", "doctype", "a", "abbr", "address", "area", "article", "aside", "audio", "b", "base", "bdi", "bdo", "blockquote", "body", "br", "button", "canvas", "caption", "center", "cite", "code", "col", "colegroup", "data", "datalist", "dd", "del", "details", "dfn", "dialog", "dir", "div", "dl", "dt", "em", "embed", "fieldset", "figcaption", "figure", "footer", "form", "h1", "head", "header", "hr", "html", "i", "iframe", "img", "input", "ins", "kbd", "label", "legend", "li", "link", "main", "map", "mark", "meta", "meter", "nav", "noscript", "object", "ol", "optgroup", "option", "output", "p", "param", "picture", "pre", "progress", "q", "rp", "rt", "ruby", "s", "samp", "script", "section", "select", "small", "source", "span", "strong", "style", "sub", "summary", "sup", "svg", "table", "tbody", "td", "template", "textarea", "tfoot", "th", "thead", "time", "title", "tr", "track", "u", "ul", "var", "video", "wbr"]
 
-const tagsUl = document.getElementById("tags")//li tag append area
-
-
-//------------------------FOREACH'E ÇEVİR
-for (let i = 0; i < tagId.length; i++) {
-    const createLi = document.createElement("li")//create li tag
-    createLi.setAttribute("id", tagId[i]) //set id
-    createLi.classList.add("tag") //add class
-    createLi.textContent = tagId[i] //set text
-    tagsUl.append(createLi) //append
-}
-//CREATE LI TAGS *END*
-
-
-
-
-
-
-
-//ATTR LIST *BEGIN*
-let attrList = {
-    comment: ["comment1", "comment2", "comment3"],
-    doctype: ["doc1", "doc2", "doc3"],
-    a: ["a1", "a2", "a3"],
-    abbr: ["abbr1", "abbr2", "abbr3"],
-    address: ["address1", "address2", "address3"],
-    area: ["area1", "area2", "area3"],
-    article: ["article1", "article2", "article3"],
-    aside: ["aside1", "aside2", "aside3"],
-    audio: ["audio1", "audio2", "audio3"],
-    b: ["attr1", "attr2", "attr3"],
-    base: [],
-    bdi: [],
-    bdo: [],
-    blockquote: [],
-    body: [],
-    br: [],
-    button: [],
-    canvas: [],
-    caption: [],
-    center: [],
-    cite: [],
-    code: [],
-    col: [],
-    colegroup: [],
-    data: [],
-    datalist: [],
-    dd: [],
-    del: [],
-    details: [],
-    dfn: [],
-    dialog: [],
-    dir: [],
-    div: [],
-    dl: [],
-    dt: [],
-    em: [],
-    embed: [],
-    fieldset: [],
-    figcaption: [],
-    figure: [],
-    footer: [],
-    form: [],
-    h1: [],
-    head: [],
-    header: [],
-    hr: [],
-    html: [],
-    i: [],
-    iframe: [],
-    img: [],
-    input: [],
-    ins: [],
-    kbd: [],
-    label: [],
-    legend: [],
-    li: [],
-    link: [],
-    main: [],
-    map: [],
-    mark: [],
-    meta: [],
-    meter: [],
-    nav: [],
-    noscript: [],
-    object: [],
-    ol: [],
-    optgroup: [],
-    option: [],
-    output: [],
-    p: [],
-    param: [],
-    picture: [],
-    pre: [],
-    progress: [],
-    q: [],
-    rp: [],
-    rt: [],
-    ruby: [],
-    s: [],
-    samp: [],
-    script: [],
-    section: [],
-    select: [],
-    small: [],
-    source: [],
-    span: [],
-    strong: [],
-    style: [],
-    sub: [],
-    summary: [],
-    sup: [],
-    svg: [],
-    table: [],
-    tbody: [],
-    td: [],
-    template: [],
-    textarea: [],
-    tfoot: [],
-    th: [],
-    thead: [],
-    time: [],
-    title: [],
-    tr: [],
-    track: [],
-    u: [],
-    ul: [],
-    var: [],
-    video: [],
-    wbr: [],
-}
-//ATTR LIST *END*
+//TAG ID *BEGIN*
+let tagId = ["comment", "doctype", "a", "abbr", "address", "area", "article", "aside", "audio", "b", "base", "bdi", "bdo", "blockquote", "body", "br", "button", "canvas", "caption", "cite", "code", "col", "colegroup", "data", "datalist", "dd", "del", "details", "dfn", "dialog", "dir", "div", "dl", "dt", "em", "embed", "fieldset", "figcaption", "figure", "footer", "form", "h1", "head", "header", "hr", "html", "i", "iframe", "img", "input", "ins", "kbd", "label", "legend", "li", "link", "main", "map", "mark", "meta", "meter", "nav", "noscript", "object", "ol", "optgroup", "option", "output", "p", "param", "picture", "pre", "progress", "q", "rp", "rt", "ruby", "s", "samp", "script", "section", "select", "small", "source", "span", "strong", "style", "sub", "summary", "sup", "svg", "table", "tbody", "td", "template", "textarea", "tfoot", "th", "thead", "time", "title", "tr", "track", "u", "ul", "var", "video", "wbr"]
+//TAG ID *END*
 
 //TAG DETAIL OBJECT *BEGIN*
 let tagDetailObj = {
@@ -247,83 +116,185 @@ let tagDetailObj = {
 }
 //TAG DETAIL OBJECT *END*
 
-const tagArray = document.getElementsByClassName("tag")//li tag array
-let tagDetailTag = document.getElementById("tagDetails")//tag detail area
+//ATTR LIST *BEGIN*
+let attrList = {
+    comment: ["comment1", "comment2", "comment3"],
+    doctype: ["doc1", "doc2", "doc3"],
+    a: ["a1", "a2", "a3"],
+    abbr: ["abbr1", "abbr2", "abbr3"],
+    address: ["address1", "address2", "address3"],
+    area: ["area1", "area2", "area3"],
+    article: ["article1", "article2", "article3"],
+    aside: ["aside1", "aside2", "aside3"],
+    audio: ["audio1", "audio2", "audio3"],
+    b: ["attr1", "attr2", "attr3"],
+    base: ["attr1", "attr2", "attr3"],
+    bdi: ["attr1", "attr2", "attr3"],
+    bdo: ["attr1", "attr2", "attr3"],
+    blockquote: ["attr1", "attr2", "attr3"],
+    body: ["attr1", "attr2", "attr3"],
+    br: ["attr1", "attr2", "attr3"],
+    button: ["attr1", "attr2", "attr3"],
+    canvas: ["attr1", "attr2", "attr3"],
+    caption: ["attr1", "attr2", "attr3"],
+    center: ["attr1", "attr2", "attr3"],
+    cite: ["attr1", "attr2", "attr3"],
+    code: ["attr1", "attr2", "attr3"],
+    col: ["attr1", "attr2", "attr3"],
+    colegroup: ["attr1", "attr2", "attr3"],
+    data: ["attr1", "attr2", "attr3"],
+    datalist: ["attr1", "attr2", "attr3"],
+    dd: ["attr1", "attr2", "attr3"],
+    del: ["attr1", "attr2", "attr3"],
+    details: ["attr1", "attr2", "attr3"],
+    dfn: ["attr1", "attr2", "attr3"],
+    dialog: ["attr1", "attr2", "attr3"],
+    dir: ["attr1", "attr2", "attr3"],
+    div: ["attr1", "attr2", "attr3"],
+    dl: ["attr1", "attr2", "attr3"],
+    dt: ["attr1", "attr2", "attr3"],
+    em: ["attr1", "attr2", "attr3"],
+    embed: ["attr1", "attr2", "attr3"],
+    fieldset: ["attr1", "attr2", "attr3"],
+    figcaption: ["attr1", "attr2", "attr3"],
+    figure: ["attr1", "attr2", "attr3"],
+    footer: ["attr1", "attr2", "attr3"],
+    form: ["attr1", "attr2", "attr3"],
+    h1: ["attr1", "attr2", "attr3"],
+    head: ["attr1", "attr2", "attr3"],
+    header: ["attr1", "attr2", "attr3"],
+    hr: ["attr1", "attr2", "attr3"],
+    html: ["attr1", "attr2", "attr3"],
+    i: ["attr1", "attr2", "attr3"],
+    iframe: ["attr1", "attr2", "attr3"],
+    img: ["attr1", "attr2", "attr3"],
+    input: ["attr1", "attr2", "attr3"],
+    ins: ["attr1", "attr2", "attr3"],
+    kbd: ["attr1", "attr2", "attr3"],
+    label: ["attr1", "attr2", "attr3"],
+    legend: ["attr1", "attr2", "attr3"],
+    li: ["attr1", "attr2", "attr3"],
+    link: ["attr1", "attr2", "attr3"],
+    main: ["attr1", "attr2", "attr3"],
+    map: ["attr1", "attr2", "attr3"],
+    mark: ["attr1", "attr2", "attr3"],
+    meta: ["attr1", "attr2", "attr3"],
+    meter: ["attr1", "attr2", "attr3"],
+    nav: ["attr1", "attr2", "attr3"],
+    noscript: ["attr1", "attr2", "attr3"],
+    object: ["attr1", "attr2", "attr3"],
+    ol: ["attr1", "attr2", "attr3"],
+    optgroup: ["attr1", "attr2", "attr3"],
+    option: ["attr1", "attr2", "attr3"],
+    output: ["attr1", "attr2", "attr3"],
+    p: ["attr1", "attr2", "attr3"],
+    param: ["attr1", "attr2", "attr3"],
+    picture: ["attr1", "attr2", "attr3"],
+    pre: ["attr1", "attr2", "attr3"],
+    progress: ["attr1", "attr2", "attr3"],
+    q: ["attr1", "attr2", "attr3"],
+    rp: ["attr1", "attr2", "attr3"],
+    rt: ["attr1", "attr2", "attr3"],
+    ruby: ["attr1", "attr2", "attr3"],
+    s: ["attr1", "attr2", "attr3"],
+    samp: ["attr1", "attr2", "attr3"],
+    script: ["attr1", "attr2", "attr3"],
+    section: ["attr1", "attr2", "attr3"],
+    select: ["attr1", "attr2", "attr3"],
+    small: ["attr1", "attr2", "attr3"],
+    source: ["attr1", "attr2", "attr3"],
+    span: ["attr1", "attr2", "attr3"],
+    strong: ["attr1", "attr2", "attr3"],
+    style: ["attr1", "attr2", "attr3"],
+    sub: ["attr1", "attr2", "attr3"],
+    summary: ["attr1", "attr2", "attr3"],
+    sup: ["attr1", "attr2", "attr3"],
+    svg: ["attr1", "attr2", "attr3"],
+    table: ["attr1", "attr2", "attr3"],
+    tbody: ["attr1", "attr2", "attr3"],
+    td: ["attr1", "attr2", "attr3"],
+    template: ["attr1", "attr2", "attr3"],
+    textarea: ["attr1", "attr2", "attr3"],
+    tfoot: ["attr1", "attr2", "attr3"],
+    th: ["attr1", "attr2", "attr3"],
+    thead: ["attr1", "attr2", "attr3"],
+    time: ["attr1", "attr2", "attr3"],
+    title: ["attr1", "attr2", "attr3"],
+    tr: ["attr1", "attr2", "attr3"],
+    track: ["attr1", "attr2", "attr3"],
+    u: ["attr1", "attr2", "attr3"],
+    ul: ["attr1", "attr2", "attr3"],
+    var: ["attr1", "attr2", "attr3"],
+    video: ["attr1", "attr2", "attr3"],
+    wbr: ["attr1", "attr2", "attr3"],
+}
+//ATTR LIST *END*
+
+const attrIframeList = {
+    comment: ['<iframe height="300" style="width: 100%;" scrolling="no" title="commentattr1" src="https://codepen.io/onepagehtml/embed/Poyzddx?default-tab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">See the Pen <a href="https://codepen.io/onepagehtml/pen/Poyzddx"> commentattr1</a> by onepagehtml (<a href="https://codepen.io/onepagehtml">@onepagehtml</a>) on <a href="https://codepen.io">CodePen</a>.</iframe>', '<iframe height="300" style="width: 100%;" scrolling="no" title="commentattr2" src="https://codepen.io/onepagehtml/embed/qBJNMJP?default-tab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">See the Pen <a href="https://codepen.io/onepagehtml/pen/qBJNMJP">commentattr2</a> by onepagehtml (<a href="https://codepen.io/onepagehtml">@onepagehtml</a>)on <a href="https://codepen.io">CodePen</a>.</iframe>', '<iframe height="300" style="width: 100%;" scrolling="no" title="commentattr3"src="https://codepen.io/onepagehtml/embed/jOereyr?default-tab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe>']
+}
+
+const tagsUl = document.getElementById("tags")  //li tag div
+let tagDetail = document.getElementById("tagDetails")   //tag detail div
 
 //TAG DETAIL *BEGIN*
-for (let j = 0; j < tagArray.length; j++) {
+tagId.forEach((element, index) => {
+    const createLiTag = document.createElement("li")
+    createLiTag.setAttribute("id", tagId[index])
+    createLiTag.classList.add("tag")
+    createLiTag.textContent = tagId[index]
+    tagsUl.append(createLiTag)
 
-    tagArray[j].addEventListener("click", function () {
-        let tagDetailObjItems = tagDetailObj[tagId[j]] 
-
-        //TAG DETAIL TEMPLATE *BEGIN*
+    createLiTag.addEventListener("click", function (e) {
+        let tagDetailData = tagDetailObj[element]
         let tagDetailTemplate = `
-    <div class="closebutton" id="cls">
-    <i class="fa-solid fa-circle-xmark fa-2x" id="cls"></i>
-  </div>
-            <div id="${tagDetailObjItems[0]}" class="tagInfo">
-            <div class="tagHeader marginT20">${tagDetailObjItems[1]}</div>
-            <div class="tagDesc">
-                <div class="tagDectxt marginTRL20">${tagDetailObjItems[2]}</div>
-                <code class="marginT20" style="color: #0e960c">${tagDetailObjItems[3]}</code>
-                <div class="note">${tagDetailObjItems[4]}</div>
+            <div class="closebutton" id="cls">
+            <i class="fa-solid fa-circle-xmark fa-2x" id="cls"></i>
             </div>
-            <div class="tagAttrs">
-                <div class="attrs">
-                    <div class="attrList">
-                        <ul id="attrListUl">
-                            <h3 class="attrListH">Attributes</h3>
-                        </ul>
-                    </div>
-                    <div id="attrShow">
-                    <iframe height="300" style="width: 100%;" scrolling="no" title="${tagDetailObjItems[5]}" src="https://codepen.io/onepagehtml/embed/${tagDetailObjItems[6]}?default-tab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
-                    See the Pen <a href="https://codepen.io/onepagehtml/pen/${tagDetailObjItems[6]}">${tagDetailObjItems[5]}</a> by onepagehtml (<a href="https://codepen.io/onepagehtml">@onepagehtml</a>)
-                    on <a href="https://codepen.io">CodePen</a>.
-                  </iframe>                    
-                  </div>
+            <div id="${tagDetailData[0]}" class="tagInfo">
+                <div class="tagHeader marginT20">${tagDetailData[1]}</div>
+                <div class="tagDesc">
+                    <div class="tagDectxt marginTRL20">${tagDetailData[2]}</div>
+                    <code class="marginT20" style="color: #0e960c">${tagDetailData[3]}</code>
+                    <div class="note">${tagDetailData[4]}</div>
                 </div>
+                <div class="tagAttrs">
+                    <div class="attrs">
+                    <div class="attrList">
+                    <ul id="attrListUl">
+                        <h3>Attributes</h3>
+                    </ul>
+                </div>
+                <div id="attrShow">
+                  <iframe height="300" style="width: 100%;" scrolling="no" title="${tagDetailData[5]}" src="https://codepen.io/onepagehtml/embed/${tagDetailData[6]}?default-tab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"> See the Pen <a href="https://codepen.io/onepagehtml/pen/${tagDetailData[6]}">${tagDetailData[5]}</a> by onepagehtml ( <a href="https://codepen.io/onepagehtml">@onepagehtml</a>) on <a href="https://codepen.io">CodePen</a>. </iframe>
+                </div>
+              </div>
             </div>
-        </div>
-        `
-        //TAG DETAIL TEMPLATE *END*
-
-        tagDetailTag.innerHTML = tagDetailTemplate //tagdetail append
-
-        let attrId = this.id //get current item id
-        if (attrId != null && (attrId != undefined) & (attrId != "")) { //id check
-            tagDetailTag.style.display = "inline-block"; //show tag detail div
-            let clsbtn = document.getElementById("cls"); //select close button
-
+          </div>
+            `
+        tagDetail.innerHTML = tagDetailTemplate //tagdetail append
+        const attrListUl = document.getElementById("attrListUl")
+        attrList[element].forEach((attrElement, attrIndex) => {
+            const createAttrLiTag = document.createElement("li")
+            createAttrLiTag.setAttribute("id", e.target.id + "-AttrLi" + `${attrIndex++}`)
+            createAttrLiTag.textContent = attrElement
+            attrListUl.append(createAttrLiTag)
+            createAttrLiTag.addEventListener("click", function () {
+                const attrIframe = document.getElementById("attrShow")
+                console.log(attrIndex)
+                attrIframe.innerHTML = attrIframeList[element][attrIndex - 1]
+            })
+        })
+        let clsbtn = document.getElementById("cls"); //select close button
+        if (e.target.id !== undefined && e.target.id !== null && e.target.id !== "") {
+            tagDetail.style.display = "block"
             clsbtn.addEventListener("click", () => { //close button click
-                document.getElementById(`${tagId[j]}` + "Attr").remove() //current tag div remove
-                tagDetailTag.style.display = "none"; //close tag detail hide
-                clsbtn.remove() //remove close button
+                document.getElementById(element + "Attr").remove() //current tag div remove
+                tagDetail.style.display = "none"; //close tag detail hide
+                // clsbtn.remove() //remove close button
             })
         }
-        //ATTR ADDING *BEGIN*
-        let currentAttrList = attrList[tagId[j]] //current item attrs
-        const attrListUl = document.getElementById("attrListUl") //attr append area
-
-        currentAttrList.forEach((element, index) => { //add all attrs
-            //attr template
-            let attrListTemplate = 
-                `
-                    <li class="attr${index}">${element}</li>   
-                `
-            attrListUl.innerHTML += attrListTemplate //adding attrs
-
-            let iframeDiv = document.getElementById("attrShow") //select parent div
-
-            //iframe template for attr
-            // iframe.innerHTML = 
-            //     `
-            //     <iframe height="300" style="width: 100%;" scrolling="no" title="${tagDetailObjItems[5]}" src="https://codepen.io/onepagehtml/embed/${tagDetailObjItems[6]}?default-tab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
-            //     See the Pen <a href="https://codepen.io/onepagehtml/pen/${tagDetailObjItems[6]}">${tagDetailObjItems[5]}</a> by onepagehtml (<a href="https://codepen.io/onepagehtml">@onepagehtml</a>)
-            //     on <a href="https://codepen.io">CodePen</a>.
-            //     </iframe>         
-            //     `
-        });
-        //ATTR ADDING *END*
     })
-}
+});
 //TAG DETAIL *END*
+
