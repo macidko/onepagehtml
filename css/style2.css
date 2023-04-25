@@ -1,9 +1,18 @@
-html {
+* {
+  padding: 0;
+  box-sizing: border-box;
   font-family: "Courier New", Courier, monospace;
 }
 
 body {
-  background-color: #f5f5dc;
+  background-color: #F7F7F7;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
 }
 
 /* HEADER */
@@ -15,14 +24,32 @@ body {
 }
 
 .header {
-  background-color: aqua;
+  background-color: #11c7c7;
+  color: #ffffff;
+  width: 50%;
+  text-align: center;
+  border-bottom-right-radius: 100%;
+  border-bottom-left-radius: 100%;
+}
+
+.header h1 {
+  text-shadow: 1px 1px 1px #000000;
 }
 
 .header-exp {
   text-align: center;
 }
 
+.header-exp input {
+  width: 100%;
+  text-align: center;
+}
+
 /* CONTENT */
+.main{
+  width: 100%;
+  min-height: 80%;
+}
 .content-cont {
   display: flex;
   align-items: center;
@@ -39,14 +66,42 @@ body {
   width: 20vh;
   font-size: 2.5vh;
   padding: 10px 0;
-  background-color: #32afff;
+  background-color: #4285f4;
   color: #ffffff;
-  border: 3px solid #555753;
-  border-radius: 5%;
   text-align: center;
   cursor: pointer;
-  font-weight: 600;
   isolation: isolate;
+  box-shadow: 4px 4px 0px 0px #000;
+  animation: tag-shadow-reverse 250ms ease forwards;
+}
+
+.tag:hover {
+  animation: tag-shadow 250ms ease forwards;
+}
+
+@keyframes tag-shadow {
+  from {
+    transform: translate(0px, 0px);
+    box-shadow: 4px 4px 0px 0px #000;
+  }
+
+  to {
+    transform: translate(-3px, -3px);
+    box-shadow: 7px 7px 0px 0px #000;
+  }
+}
+
+@keyframes tag-shadow-reverse {
+  from {
+    transform: translate(-3px, -3px);
+    box-shadow: 7px 7px 0px 0px #000;
+  }
+
+  to {
+    transform: translate(0px, 0px);
+    box-shadow: 4px 4px 0px 0px #000;
+  }
+
 }
 
 .tag::before {
@@ -56,15 +111,16 @@ body {
   left: 0;
   width: 100%;
   height: 0%;
-  background-color: #ef2929;
+  background-color: #11c7c7;
   z-index: -1;
+  animation: tag-hover-before-reverse 250ms ease forwards reverse;
 }
 
 .tag:hover::before {
-  animation: hover-before 250ms ease forwards;
+  animation: tag-hover-before 250ms ease forwards;
 }
 
-@keyframes hover-before {
+@keyframes tag-hover-before {
   from {
     height: 0%;
   }
@@ -72,6 +128,17 @@ body {
   to {
     height: 100%;
   }
+}
+
+@keyframes tag-hover-before-reverse {
+  to {
+    height: 100%;
+  }
+
+  from {
+    height: 0%;
+  }
+
 }
 
 .tags {
@@ -86,8 +153,8 @@ body {
 /* ATTRIBUTE DETAIL */
 #tagDetails {
   display: none;
-  width: 75%;
-  height: auto;
+  width: 95%;
+  height: 90%;
   position: fixed;
   top: 50%;
   left: 50%;
@@ -120,19 +187,33 @@ body {
 
 /* TAG DETAIL DIV */
 .tagInfo {
+  width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 
 .tagHeader {
   text-align: center;
   font-weight: bold;
+  width: fit-content;
+  background-color: #11c7c7;
+  color: #ffffff;
+  padding: 0.7rem;
+  width: 30%;
+  text-shadow: 1px 1px 1px #000000;
+  letter-spacing: 2px;
+  font-size: 1.5rem;
+  border-bottom-right-radius: 100%;
+  border-bottom-left-radius: 100%;
 }
 
 .note {
   background-color: bisque;
-  width: 85%;
+  width: 90%;
+  padding: 1rem;
   margin: 20px auto 0 auto;
 }
 
@@ -140,7 +221,7 @@ code {
   background-color: #eee;
   border: 1px solid #999;
   display: block;
-  padding: 20px;
+  padding: 1rem;
   font-weight: 100;
   width: 90%;
   margin: 0 auto;
@@ -148,24 +229,41 @@ code {
 
 .tagAttrs {
   width: 90%;
+  height: 100%;
   margin: 20px auto;
   gap: 1rem;
-}
-
-.attrs {
   display: flex;
   flex-direction: row;
   gap: 1rem;
 }
 
 .attrList {
-  border: 1px solid red;
   flex: 1;
 }
 
 #attrShow {
-  border: 1px solid green;
   flex: 4;
+  position: relative;
+}
+
+
+.loading {
+  display: none;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.loading i {
+  position: absolute;
+  width: fit-content;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 
 .attrHeader {
@@ -192,9 +290,6 @@ code {
 
 #attrListUl li {
   cursor: pointer;
-  text-decoration: underline;
-  text-decoration-style: wavy;
-  text-decoration-color: #999;
   margin: 1rem 0;
 }
 
