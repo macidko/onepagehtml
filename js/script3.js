@@ -118,115 +118,113 @@ let tagDetailObj = {
 
 //ATTR LIST *BEGIN*
 let attrList = {
-    comment: ["comment1", "comment2", "comment3"],
-    doctype: ["doc1", "doc2", "doc3"],
-    a: ["a1", "a2", "a3"],
-    abbr: ["abbr1", "abbr2", "abbr3"],
-    address: ["address1", "address2", "address3"],
-    area: ["area1", "area2", "area3"],
-    article: ["article1", "article2", "article3"],
-    aside: ["aside1", "aside2", "aside3"],
-    audio: ["audio1", "audio2", "audio3"],
-    b: ["attr1", "attr2", "attr3"],
-    base: ["attr1", "attr2", "attr3"],
-    bdi: ["attr1", "attr2", "attr3"],
-    bdo: ["attr1", "attr2", "attr3"],
-    blockquote: ["attr1", "attr2", "attr3"],
-    body: ["attr1", "attr2", "attr3"],
-    br: ["attr1", "attr2", "attr3"],
-    button: ["attr1", "attr2", "attr3"],
-    canvas: ["attr1", "attr2", "attr3"],
-    caption: ["attr1", "attr2", "attr3"],
-    center: ["attr1", "attr2", "attr3"],
-    cite: ["attr1", "attr2", "attr3"],
-    code: ["attr1", "attr2", "attr3"],
-    col: ["attr1", "attr2", "attr3"],
-    colegroup: ["attr1", "attr2", "attr3"],
-    data: ["attr1", "attr2", "attr3"],
-    datalist: ["attr1", "attr2", "attr3"],
-    dd: ["attr1", "attr2", "attr3"],
-    del: ["attr1", "attr2", "attr3"],
-    details: ["attr1", "attr2", "attr3"],
-    dfn: ["attr1", "attr2", "attr3"],
-    dialog: ["attr1", "attr2", "attr3"],
-    dir: ["attr1", "attr2", "attr3"],
-    div: ["attr1", "attr2", "attr3"],
-    dl: ["attr1", "attr2", "attr3"],
-    dt: ["attr1", "attr2", "attr3"],
-    em: ["attr1", "attr2", "attr3"],
-    embed: ["attr1", "attr2", "attr3"],
-    fieldset: ["attr1", "attr2", "attr3"],
-    figcaption: ["attr1", "attr2", "attr3"],
-    figure: ["attr1", "attr2", "attr3"],
-    footer: ["attr1", "attr2", "attr3"],
-    form: ["attr1", "attr2", "attr3"],
-    h1: ["attr1", "attr2", "attr3"],
-    head: ["attr1", "attr2", "attr3"],
-    header: ["attr1", "attr2", "attr3"],
-    hr: ["attr1", "attr2", "attr3"],
-    html: ["attr1", "attr2", "attr3"],
-    i: ["attr1", "attr2", "attr3"],
-    iframe: ["attr1", "attr2", "attr3"],
-    img: ["attr1", "attr2", "attr3"],
-    input: ["attr1", "attr2", "attr3"],
-    ins: ["attr1", "attr2", "attr3"],
-    kbd: ["attr1", "attr2", "attr3"],
-    label: ["attr1", "attr2", "attr3"],
-    legend: ["attr1", "attr2", "attr3"],
-    li: ["attr1", "attr2", "attr3"],
-    link: ["attr1", "attr2", "attr3"],
-    main: ["attr1", "attr2", "attr3"],
-    map: ["attr1", "attr2", "attr3"],
-    mark: ["attr1", "attr2", "attr3"],
-    meta: ["attr1", "attr2", "attr3"],
-    meter: ["attr1", "attr2", "attr3"],
-    nav: ["attr1", "attr2", "attr3"],
-    noscript: ["attr1", "attr2", "attr3"],
-    object: ["attr1", "attr2", "attr3"],
-    ol: ["attr1", "attr2", "attr3"],
-    optgroup: ["attr1", "attr2", "attr3"],
-    option: ["attr1", "attr2", "attr3"],
-    output: ["attr1", "attr2", "attr3"],
-    p: ["attr1", "attr2", "attr3"],
-    param: ["attr1", "attr2", "attr3"],
-    picture: ["attr1", "attr2", "attr3"],
-    pre: ["attr1", "attr2", "attr3"],
-    progress: ["attr1", "attr2", "attr3"],
-    q: ["attr1", "attr2", "attr3"],
-    rp: ["attr1", "attr2", "attr3"],
-    rt: ["attr1", "attr2", "attr3"],
-    ruby: ["attr1", "attr2", "attr3"],
-    s: ["attr1", "attr2", "attr3"],
-    samp: ["attr1", "attr2", "attr3"],
-    script: ["attr1", "attr2", "attr3"],
-    section: ["attr1", "attr2", "attr3"],
-    select: ["attr1", "attr2", "attr3"],
-    small: ["attr1", "attr2", "attr3"],
-    source: ["attr1", "attr2", "attr3"],
-    span: ["attr1", "attr2", "attr3"],
-    strong: ["attr1", "attr2", "attr3"],
-    style: ["attr1", "attr2", "attr3"],
-    sub: ["attr1", "attr2", "attr3"],
-    summary: ["attr1", "attr2", "attr3"],
-    sup: ["attr1", "attr2", "attr3"],
-    svg: ["attr1", "attr2", "attr3"],
-    table: ["attr1", "attr2", "attr3"],
-    tbody: ["attr1", "attr2", "attr3"],
-    td: ["attr1", "attr2", "attr3"],
-    template: ["attr1", "attr2", "attr3"],
-    textarea: ["attr1", "attr2", "attr3"],
-    tfoot: ["attr1", "attr2", "attr3"],
-    th: ["attr1", "attr2", "attr3"],
-    thead: ["attr1", "attr2", "attr3"],
-    time: ["attr1", "attr2", "attr3"],
-    title: ["attr1", "attr2", "attr3"],
-    tr: ["attr1", "attr2", "attr3"],
-    track: ["attr1", "attr2", "attr3"],
-    u: ["attr1", "attr2", "attr3"],
-    ul: ["attr1", "attr2", "attr3"],
-    var: ["attr1", "attr2", "attr3"],
-    video: ["attr1", "attr2", "attr3"],
-    wbr: ["attr1", "attr2", "attr3"],
+    comment: ["None"],
+    doctype: ["None"],
+    a: ["Global Attributes", "download", "href", "hreflang", "media", "ping", "referrerpolicy", "rel", "target", "type"],
+    abbr: ["Global Attributes"],
+    address: ["Global Attributes"],
+    area: ["Global Attributes", "alt", "coords", "download", "href", "hreflang", "media", "referrerpolicy", "rel", "shape", "target", "type"],
+    article: ["Global Attributes"],
+    aside: ["Global Attributes"],
+    audio: ["Global Attributes", "autoplay", "controls", "loop", "muted", "preload", "src"],
+    b: ["Global Attributes"],
+    base: ["Global Attributes", "href", "target"],
+    bdi: ["Global Attributes"],
+    bdo: ["Global Attributes"],
+    blockquote: ["Global Attributes", "cite"],
+    body: ["Global Attributes"],
+    br: ["Global Attributes"],
+    button: ["Global Attributes", "autofocus", "disabled", "form", "formaction", "formenctype", "formmethod", "formnovalidate", "formtarget", "name", "type", "value"],
+    canvas: ["Global Attributes", "height", "width"],
+    caption: ["Global Attributes"],
+    cite: ["Global Attributes"],
+    code: ["Global Attributes"],
+    col: ["Global Attributes", "span"],
+    colegroup: ["Global Attributes", "span"],
+    data: ["Global Attributes", "value"],
+    datalist: ["Global Attributes"],
+    dd: ["Global Attributes"],
+    del: ["Global Attributes", "cite", "datetime"],
+    details: ["Global Attributes", "open"],
+    dfn: ["Global Attributes"],
+    dialog: ["Global Attributes", "open"],
+    div: ["Global Attributes"],
+    dl: ["Global Attributes"],
+    dt: ["Global Attributes"],
+    em: ["Global Attributes"],
+    embed: ["Global Attributes", "height", "src", "type", "width"],
+    fieldset: ["Global Attributes", "disabled", "form", "name"],
+    figcaption: ["Global Attributes"],
+    figure: ["Global Attributes"],
+    footer: ["Global Attributes"],
+    form: ["Global Attributes", "accept-charset", "action", "autocomplete", "enctype", "method", "name", "novalidate", "rel", "target"],
+    h1: ["Global Attributes"],
+    head: ["Global Attributes"],
+    header: ["Global Attributes"],
+    hr: ["Global Attributes"],
+    html: ["Global Attributes", "xmlns"],
+    i: ["Global Attributes"],
+    iframe: ["Global Attributes", "allow", "allowfullscreen", "allowpaymentrequest", "height", "loading", "name", "referrerpolicy", "sandbox", "src", "srcdoc", "width"],
+    img: ["Global Attributes", "alt", "crossorigin", "height", "ismap", "loading", "longdesc", "referrerpolicy", "sizes", "src", "srcset", "usemap", "width"],
+    input: ["Global Attributes", "accept", "alt", "autocomplete", "autofocus", "checked", "dirname", "disabled", "form", "formaction", "formenctype", "formmethod", "formnovalidate", "formtarget", "height", "list", "max", "maxlength", "mix", "minlength", "multiple", "name", "pattern", "placeholder", "readonly", "required", "size", "src", "step", "type", "value", "width"],
+    ins: ["Global Attributes", "cite", "datetime"],
+    kbd: ["Global Attributes"],
+    label: ["Global Attributes", "for", "form"],
+    legend: ["Global Attributes"],
+    li: ["Global Attributes", "value"],
+    link: ["Global Attributes", "crossorigin", "href", "hreflang", "media", "referrerpolicy", "rel", "sizes", "title", "type"],
+    main: ["Global Attributes"],
+    map: ["Global Attributes", "name"],
+    mark: ["Global Attributes"],
+    meta: ["Global Attributes", "charset", "content", "http-equiv", "name"],
+    meter: ["Global Attributes", "form", "high", "low", "max", "min", "optimum", "value"],
+    nav: ["Global Attributes"],
+    noscript: ["Global Attributes"],
+    object: ["Global Attributes", "data", "form", "height", "name", "type", "typemustmatch", "usemap", "width"],
+    ol: ["Global Attributes", "reversed", "start", "type"],
+    optgroup: ["Global Attributes", "disabled", "label"],
+    option: ["Global Attributes", "disabled", "label", "selected", "value"],
+    output: ["Global Attributes", "for", "form", "name"],
+    p: ["Global Attributes"],
+    param: ["Global Attributes", "name", "value"],
+    picture: ["Global Attributes"],
+    pre: ["Global Attributes"],
+    progress: ["Global Attributes", "max", "value"],
+    q: ["Global Attributes", "cite"],
+    rp: ["Global Attributes"],
+    rt: ["Global Attributes"],
+    ruby: ["Global Attributes"],
+    s: ["Global Attributes"],
+    samp: ["Global Attributes"],
+    script: ["Global Attributes", "async", "crossorigin", "defer", "integrity", "nomodule", "referrerpolicy", "src", "type"],
+    section: ["Global Attributes"],
+    select: ["Global Attributes", "autofocus", "disabled", "form", "multiple", "name", "required", "size"],
+    small: ["Global Attributes"],
+    source: ["Global Attributes", "media", "sizes", "src", "srcset", "type"],
+    span: ["Global Attributes"],
+    strong: ["Global Attributes"],
+    style: ["Global Attributes", "media", "type"],
+    sub: ["Global Attributes"],
+    summary: ["Global Attributes"],
+    sup: ["Global Attributes"],
+    svg: ["width", "height"],
+    table: ["Global Attributes"],
+    tbody: ["Global Attributes"],
+    td: ["Global Attributes"],
+    template: ["Global Attributes"],
+    textarea: ["Global Attributes", "autofocus", "cols", "dirname", "disabled", "form", "maxlength", "name", "placeholder", "readonly", "required", "rows", "wrap"],
+    tfoot: ["Global Attributes",],
+    th: ["Global Attributes", "abbr", "colspan", "headers", "rowspan", "scope"],
+    thead: ["Global Attributes"],
+    time: ["Global Attributes", "datetime"],
+    title: ["Global Attributes"],
+    tr: ["Global Attributes"],
+    track: ["Global Attributes", "default", "kind", "label", "src", "srclang"],
+    u: ["Global Attributes"],
+    ul: ["Global Attributes"],
+    var: ["Global Attributes"],
+    video: ["Global Attributes", "autoplay", "controls", "height", "loop", "muted", "poster", "preload", "src", "width"],
+    wbr: ["Global Attributes"],
 }
 //ATTR LIST *END*
 
@@ -273,37 +271,32 @@ tagId.forEach((element, index) => {
             `
         tagDetail.innerHTML = tagDetailTemplate //tagdetail append
 
-        const codepenIframe = document.querySelector("#attrShow iframe")
-        const loadingAnimation = document.querySelector(".loading")
-        loadingAnimation.style.display = "block"
-        codepenIframe.addEventListener("load", () => loadingAnimation.style.display = "none")
+        const codepenIframe = document.querySelector("#attrShow iframe") //select iframe element
+        const loadingAnimation = document.querySelector(".loading") //select loading element
+        loadingAnimation.style.display = "block" //show loading animation
+        codepenIframe.addEventListener("load", () => loadingAnimation.style.display = "none")//iframe load listener
 
-        const attrListUl = document.getElementById("attrListUl")
-        attrList[element].forEach((attrElement, attrIndex) => {
-            const createAttrLiTag = document.createElement("li")
-            createAttrLiTag.setAttribute("id", e.target.id + "-AttrLi" + `${attrIndex++}`)
-            createAttrLiTag.textContent = attrElement
-            attrListUl.append(createAttrLiTag)
+        const attrListUl = document.getElementById("attrListUl") //select attribute list ul element
+        attrList[element].forEach((attrElement, attrIndex) => {//attribute list obj loop
+            const createAttrLiTag = document.createElement("li") //create attribute li element
+            createAttrLiTag.setAttribute("id", e.target.id + "-AttrLi" + `${attrIndex++}`) //set attribute id
+            createAttrLiTag.textContent = attrElement //set attribute text
+            attrListUl.append(createAttrLiTag)//add attribute
 
-            createAttrLiTag.addEventListener("click", function () {
-                // const codepenIframe = document.querySelector("#attrShow iframe")
-                const loadingAnimation = document.querySelector(".loading")
+            createAttrLiTag.addEventListener("click", function () { //attribute click event
+                const loadingAnimation = document.querySelector(".loading")//select loading animation
 
-                loadingAnimation.style.display = "block"
-                codepenIframe.src = attrIframeList[element][attrIndex - 1]
-
-
-                codepenIframe.addEventListener("load", () => loadingAnimation.style.display = "none")
-
-
+                loadingAnimation.style.display = "block" //show loading animation
+                codepenIframe.src = attrIframeList[element][attrIndex - 1] //set attribute iframe src
+                codepenIframe.addEventListener("load", () => loadingAnimation.style.display = "none") //hide loading animation
             })
         })
         let clsbtn = document.getElementById("cls"); //select close button
         if (e.target.id !== undefined && e.target.id !== null && e.target.id !== "") {
-            tagDetail.style.display = "block"
-            clsbtn.addEventListener("click", () => { //close button click
-                document.getElementById(element + "Attr").remove() //current tag div remove
-                tagDetail.style.display = "none"; //close tag detail hide
+            tagDetail.style.display = "block" //show tag tagdetail 
+            clsbtn.addEventListener("click", () => { //close button click event
+                document.getElementById(element + "Attr").remove() //target tag div remove
+                tagDetail.style.display = "none"; //hide tag detail
                 // clsbtn.remove() //remove close button
             })
         }
@@ -311,22 +304,20 @@ tagId.forEach((element, index) => {
 });
 //TAG DETAIL *END*
 
-let allTags = document.querySelectorAll(".tag");
+let allTags = document.querySelectorAll(".tag"); //select tag elements
 
-const searchInput = document.getElementById("search");
+const searchInput = document.getElementById("search"); //select search input
 
-searchInput.addEventListener("keyup", function(e) {
-  let searchValue = e.target.value;
-  let filteredTags = Array.from(allTags).filter(function(tag) {
-        
-        if(tag.textContent.includes(searchValue) === true){
-            return tag.style.display = "block"
+searchInput.addEventListener("keyup", function (e) { //search input keyup event
+    let searchValue = e.target.value; //searchbar value
+    Array.from(allTags).filter(function (tag) { //tag filtering
+
+        if (tag.textContent.includes(searchValue) === true) { //tag value check
+            return tag.style.display = "block" //set tag display
         }
-        else{
-            return tag.style.display = "none"
+        else {
+            return tag.style.display = "none" //set tag display
         }
-    
-  });
-  console.log(filteredTags);
 
+    });
 })
