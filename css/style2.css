@@ -188,6 +188,9 @@ body {
 }
 
 /* TAG DETAIL DIV */
+.tagDesc{
+  width: 100%;
+}
 .tagInfo {
   width: 100%;
   height: auto;
