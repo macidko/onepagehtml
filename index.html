@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <!--CSS-->
-  <link rel="stylesheet" href="css/style2.css" crossorigin="anonymous" />
+  <link rel="stylesheet" href="css/style.css" crossorigin="anonymous" />
   <!-- NORMALIZE CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
     integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
@@ -28,7 +28,7 @@
       <p class="explanation">
         You can find every HTML tag and tag attributes.
       </p>
-      <input type="text" name="search" id="search" placeholder="Search Tags">
+      <input type="text" name="search" id="search" placeholder="Tag Name">
     </nav>
   </header>
   <!--HEADER *END*-->
@@ -43,6 +43,28 @@
     <!-- ATTRIBUTE DETAIL *START* -->
     <div id="tagDetails">
       <!-- ATTRIBUTE DETAIL TEMPLATE -->
+      <div class="closebutton" id="cls">
+        <i class="fa-solid fa-circle-xmark fa-2x" id="cls"></i>
+        </div>
+        <div id="" class="tagInfo">
+            <div class="tagHeader"></div>
+            <div class="tagDesc">
+                <div class="tagDecTxt marginTRL20"></div>
+                <code class="marginT20 code" style="color: #0e960c"></code>
+                <div class="note"></div>
+            </div>
+            <div class="tagAttrs">
+                <div class="attrList">
+                <ul id="attrListUl">
+                    <h3>Attributes</h3>
+                </ul>
+            </div>
+            <div id="attrShow">
+                <div class="loading"><i class="fa-solid fa-spinner fa-spin fa-2xl"></i></div>
+                <iframe id="iframe" height="300" style="width: 100%; height: 100%" scrolling="no" title="" src="https://codepen.io/onepagehtml/embed/default-tab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe>
+          </div>
+        </div>
+      </div>
     </div>
     <!-- ATTRIBUTE DETAIL *END* -->
   </main>
@@ -56,7 +78,7 @@
     <p>Source: <a href="https://www.w3schools.com/">W3Schools.com</a></p>
   </footer>
   <!--FOOTER *END*-->
-  <script src="js/script3.js" type="text/javascript" crossorigin="anonymous"></script>
+  <script src="js/script.js" type="text/javascript" crossorigin="anonymous"></script>
 </body>
 
 </html>

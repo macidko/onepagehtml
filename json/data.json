@@ -1,0 +1,1572 @@
+[
+  [
+    "a",
+    "abbr",
+    "address",
+    "area",
+    "article",
+    "aside",
+    "audio",
+    "b",
+    "base",
+    "bdi",
+    "bdo",
+    "blockquote",
+    "body",
+    "br",
+    "button",
+    "canvas",
+    "caption",
+    "cite",
+    "code",
+    "col",
+    "data",
+    "datalist",
+    "dd",
+    "del",
+    "details",
+    "dfn",
+    "dialog",
+    "div",
+    "dl",
+    "dt",
+    "em",
+    "embed",
+    "fieldset",
+    "figcaption",
+    "figure",
+    "footer",
+    "form",
+    "h1",
+    "head",
+    "header",
+    "hr",
+    "html",
+    "i",
+    "iframe",
+    "img",
+    "input",
+    "ins",
+    "kbd",
+    "label",
+    "legend",
+    "li",
+    "link",
+    "main",
+    "map",
+    "mark",
+    "meta",
+    "meter",
+    "nav",
+    "noscript",
+    "object",
+    "ol",
+    "optgroup",
+    "option",
+    "output",
+    "p",
+    "param",
+    "picture",
+    "pre",
+    "progress",
+    "q",
+    "s",
+    "samp",
+    "script",
+    "section",
+    "select",
+    "small",
+    "source",
+    "span",
+    "strong",
+    "style",
+    "sub",
+    "summary",
+    "sup",
+    "svg",
+    "table",
+    "tbody",
+    "td",
+    "template",
+    "textarea",
+    "tfoot",
+    "th",
+    "thead",
+    "time",
+    "title",
+    "tr",
+    "track",
+    "u",
+    "ul",
+    "var",
+    "video",
+    "wbr"
+  ],
+  [
+    [
+      "aAttr",
+      "a",
+      "The <a> tag defines a hyperlink, which is used to link from one page to another. The most important attribute of the <a> element is the href attribute, which indicates the link's destination.",
+      "<a href='URL'>Text</a>",
+      "Note:  If the <a> tag has no href attribute, it is only a placeholder for a hyperlink.",
+      "download<br>href<br>hreflang<br>media<br>ping<br>referrerpolicy<br>rel<br>target<br>type<br>",
+      "a",
+      "QWVKWpj"
+    ],
+    [
+      "abbrAttr",
+      "abbr",
+      "The <abbr> tag defines an abbreviation or an acronym, like \"HTML\"",
+      "CSS",
+      "Mr.",
+      "Dr.",
+      "ASAP",
+      "ATM",
+      "<abbr></abbr>",
+      "Note:  Use the global title attribute to show the description for the abbreviation/acronym when you mouse over the element.",
+      "abbr",
+      "YzOrRoP"
+    ],
+    [
+      "addressAttr",
+      "address",
+      "The <address> tag defines the contact information for the author/owner of a document or an article. The contact information can be an email address, URL, physical address, phone number, social media handle, etc.",
+      "<address></address>",
+      "Note:  The text in the <address> element usually renders in italic, and browsers will always add a line break before and after the <address> element.",
+      "address",
+      "ZEMXmdj"
+    ],
+    [
+      "areaAttr",
+      "area",
+      "The <area> tag defines an area inside an image map (an image map is an image with clickable areas). <area> elements are always nested inside a <map> tag.",
+      "<area shape=\"\" coords=\"\" alt=\"\" href=\"\">",
+      "Note:  The usemap attribute in <img> is associated with the <map> element's name attribute, and creates a relationship between the image and the map.",
+      "area",
+      "xxaXQoe"
+    ],
+    [
+      "articleAttr",
+      "article",
+      "The <article> tag specifies independent, self-contained content. An article should make sense on its own and it should be possible to distribute it independently from the rest of the site.",
+      "<article&gt</article>",
+      "Note:  The <article> element does not render as anything special in a browser. However, you can use CSS to style the <article> element",
+      "article",
+      "oNPGQKv"
+    ],
+    [
+      "asideAttr",
+      "aside",
+      "The <aside> tag defines some content aside from the content it is placed in. The aside content should be indirectly related to the surrounding content.",
+      "<aside></aside>",
+      "Note:  The <aside> element does not render as anything special in a browser. However, you can use CSS to style the <aside> element",
+      "aside",
+      "gOdGQVw"
+    ],
+    [
+      "audioAttr",
+      "audio",
+      "The <audio> tag is used to embed sound content in a document, such as music or other audio streams. The <audio> tag contains one or more <source> tags with different audio sources. The browser will choose the first source it supports. The text between the <audio> and </audio> tags will only be displayed in browsers that do not support the <audio> element.",
+      "<audio></audio>",
+      "Note:  For video files, look at the <video> tag.",
+      "audio",
+      "VwGMqZY"
+    ],
+    [
+      "bAttr",
+      "b",
+      "The <b> tag specifies bold text without any extra importance.",
+      "<b></b>",
+      "Note:  According to the HTML5 specification, the <b> tag should be used as a LAST resort when no other tag is more appropriate.",
+      "b",
+      "PodJXYb"
+    ],
+    [
+      "baseAttr",
+      "base",
+      "The <base> tag specifies the base URL and/or target for all relative URLs in a document. The <base> tag must have either an href or a target attribute present, or both.",
+      "<base>",
+      "Note:  There can only be one single <base> element in a document, and it must be inside the <head> element.",
+      "base",
+      "bGxoObR"
+    ],
+    [
+      "bdiAttr",
+      "bdi",
+      "The <bdi> tag isolates a part of text that might be formatted in a different direction from other text outside it. This element is useful when embedding user-generated content with an unknown text direction.",
+      "<bdi></bdi>",
+      "Note:  BDI stands for Bi-Directional Isolation.",
+      "bdi",
+      "KKxXbPQ"
+    ],
+    [
+      "bdoAttr",
+      "bdo",
+      "The <bdo> tag is used to override the current text direction.",
+      "<bdo></bdo>",
+      "Note:  BDO stands for Bi-Directional Override.",
+      "bdo",
+      "ExewGYr"
+    ],
+    [
+      "blockquoteAttr",
+      "blockquote",
+      "The <blockquote> tag specifies a section that is quoted from another source. Browsers usually indent <blockquote> elements (look at example below to see how to remove the indentation).",
+      "<blockquote></blockquote>",
+      "Note:  Use <q> for inline (short) quotations.",
+      "blockquote",
+      "RwYLEwr"
+    ],
+    [
+      "bodyAttr",
+      "body",
+      "The <body> tag defines the document's body. The <body> element contains all the contents of an HTML document, such as headings, paragraphs, images, hyperlinks, tables, lists, etc.",
+      "<body></body>",
+      "Note:  There can only be one <body> element in an HTML document.",
+      "body",
+      "YzOrBPr"
+    ],
+    [
+      "brAttr",
+      "br",
+      "The <br> tag inserts a single line break.",
+      "<br>",
+      "Note:  Use the <br> tag to enter line breaks, not to add space between paragraphs.",
+      "br",
+      "ZEMXwGE"
+    ],
+    [
+      "buttonAttr",
+      "button",
+      "The <button> tag defines a clickable button. Inside a <button> element you can put text (and tags like <i>, <b>, <strong&gt, <br>, <img>, etc.). That is not possible with a button created with the <input> element!",
+      "<button></button>",
+      "Note:  Always specify the type attribute for a <button> element, to tell browsers what type of button it is.",
+      "button",
+      "xxaXMGE"
+    ],
+    [
+      "canvasAttr",
+      "canvas",
+      "The <canvas> tag is used to draw graphics, on the fly, via scripting (usually JavaScript).",
+      " <canvas> </canvas>",
+      "Note:  Etiket <canvas> şeffaftır ve yalnızca grafikler için bir kapsayıcıdır, grafikleri fiilen çizmek için bir komut dosyası kullanmalısınız.",
+      "canvas",
+      "dyqVaoR"
+    ],
+    [
+      "captionAttr",
+      "caption",
+      "The <caption> tag defines a table caption. The <caption> tag must be inserted immediately after the <table> tag.",
+      "<caption></caption>",
+      "Note:  By default, a table caption will be center-aligned above a table. However, the CSS properties text-align and caption-side can be used to align and place the caption.",
+      "caption",
+      "GRXMzJx"
+    ],
+    [
+      "citeAttr",
+      "cite",
+      "The <cite> tag defines the title of a creative work (e.g. a book, a poem, a song, a movie, a painting, a sculpture, etc.).",
+      "<cite></cite>",
+      "Note:  The text in the <cite> element usually renders in italic.",
+      "cite",
+      "WNgZPvP"
+    ],
+    [
+      "codeAttr",
+      "code",
+      "The <code> tag is used to define a piece of computer code. The content inside is displayed in the browser's default monospace font.",
+      "<code></code>",
+      "Note:  This tag is not deprecated. However, it is possible to achieve richer effect by using CSS",
+      "code",
+      "XWPeOmm"
+    ],
+    [
+      "colAttr",
+      "col",
+      "The <col> tag specifies column properties for each column within a <colgroup> element.",
+      "<col>",
+      "Note:  The <col> tag is useful for applying styles to entire columns, instead of repeating the styles for each cell, for each row.",
+      "col",
+      "abaLXvZ"
+    ],
+    [
+      "dataAttr",
+      "data",
+      "The <data> tag is used to add a machine-readable translation of a given content. This element provides both a machine-readable value for data processors, and a human-readable value for rendering in a browser.",
+      "<data></data>",
+      "Note:  If the content is time- or date-related, use the <time> element instead.",
+      "data",
+      "RwYLvWx"
+    ],
+    [
+      "datalistAttr",
+      "datalist",
+      "The <datalist> tag is used to provide an \"autocomplete\" feature for <input> elements. Users will see a drop-down list of pre-defined options as they input data.",
+      " <datalist> </datalist>",
+      "Note:  The <datalist> element's id attribute must be equal to the <input> element's list attribute (this binds them together).",
+      "datalist",
+      "BaOwMoO"
+    ],
+    [
+      "ddAttr",
+      "dd",
+      "The <dd> tag is used to describe a term/name in a description list.",
+      "<dd></dd>",
+      "Note:  Inside a <dd> tag you can put paragraphs, line breaks, images, links, lists, etc.",
+      "dd",
+      "yLxzZYm"
+    ],
+    [
+      "delAttr",
+      "del",
+      "The <del> tag defines text that has been deleted from a document. Browsers will usually strike a line through deleted text.",
+      "<del></del>",
+      "Note:   Also look at the <ins> tag to markup inserted text.",
+      "del",
+      "rNZGPxO"
+    ],
+    [
+      "detailsAttr",
+      "details",
+      "The <details> tag specifies additional details that the user can open and close on demand.",
+      "<details></details>",
+      "Note:  The <summary> tag is used in conjunction with <details> to specify a visible heading for the details.",
+      "details",
+      "abaLXdm"
+    ],
+    [
+      "dfnAttr",
+      "dfn",
+      "The <dfn> tag stands for the \"definition element\", and it specifies a term that is going to be defined within the content.",
+      "<dfn></dfn>",
+      "Note:  The nearest parent of the <dfn> tag must also contain the definition/explanation for the term.",
+      "dfn",
+      "qBMPgbr"
+    ],
+    [
+      "dialogAttr",
+      "dialog",
+      "The <dialog> tag defines a dialog box or subwindow.",
+      "<dialog></dialog>",
+      "Note:  The <dialog> element makes it easy to create popup dialogs and modals on a web page.",
+      "dialog",
+      "GRXMzod"
+    ],
+    [
+      "divAttr",
+      "div",
+      "The <div> tag defines a division or a section in an HTML document.",
+      "<div></div>",
+      "Note:  By default, browsers always place a line break before and after the <div> element.",
+      "div",
+      "bGxozEO"
+    ],
+    [
+      "dlAttr",
+      "dl",
+      "The <dl> tag defines a description list.",
+      "<dl></dl>",
+      "Note: The <dl> tag is used in conjunction with <dt> (defines terms/names) and <dd> (describes each term/name).",
+      "dl",
+      "zYJEeqq"
+    ],
+    [
+      "dtAttr",
+      "dt",
+      "The <dt> tag defines a term/name in a description list.",
+      "<dt><dt>",
+      "Note:  The <dt> tag is used in conjunction with <dl> (defines a description list) and <dd> (describes each term/name).",
+      "dt",
+      "JjarxXE"
+    ],
+    [
+      "emAttr",
+      "em",
+      "The <em> tag is used to define emphasized text. The content inside is typically displayed in italic.",
+      "<em></em>",
+      "Note:  A screen reader will pronounce the words in <em> with an emphasis, using verbal stress.",
+      "em",
+      "YzOrBqE"
+    ],
+    [
+      "embedAttr",
+      "embed",
+      "The <embed> tag defines a container for an external resource, such as a web page, a picture, a media player, or a plug-in application.",
+      "<embed>",
+      "Note:  Most browsers no longer support Java Applets and Plug-ins. ActiveX controls are no longer supported in any browsers. The support for Shockwave Flash has also been turned off in modern browsers.",
+      "embed",
+      "RwYLvaQ"
+    ],
+    [
+      "fieldsetAttr",
+      "fieldset",
+      "The <fieldset> tag is used to group related elements in a form. The <fieldset> tag draws a box around the related elements.",
+      "<fieldset></fieldset>",
+      " Note:   The <legend> tag is used to define a caption for the <fieldset> element.",
+      "fieldset",
+      "WNgZPwm"
+    ],
+    [
+      "figcaptionAttr",
+      "figcaption",
+      "The <figcaption> tag defines a caption for a <figure> element.",
+      "<figcaption></figcaption>",
+      "Note:  The <figcaption> element can be placed as the first or last child of the <figure> element.",
+      "figcaption",
+      "poOWGyM"
+    ],
+    [
+      "figureAttr",
+      "figure",
+      "The <figure> tag specifies self-contained content, like illustrations, diagrams, photos, code listings, etc.",
+      "<figure></figure>",
+      "Note:   The <figcaption> element is used to add a caption for the <figure> element.",
+      "figure",
+      "XWPeOKX"
+    ],
+    [
+      "footerAttr",
+      "footer",
+      "The <footer> tag defines a footer for a document or section.",
+      "<footer></footer>",
+      " Note:  Contact information inside a <footer> element should go inside an <address> tag.",
+      "footer",
+      "LYJzqRL"
+    ],
+    [
+      "formAttr",
+      "form",
+      "The <form> tag is used to create an HTML form for user input.",
+      "<form></form>",
+      "Note:  The <form> element can contain one or more of the following form  <br><input><textarea><button><select><option><optgroup><fieldset><label><output>",
+      "form",
+      "VwGrYxK"
+    ],
+    [
+      "h1Attr",
+      "h1",
+      "The <h1> to <h6> tags are used to define HTML headings. <h1> defines the most important heading. <h6> defines the least important heading.",
+      "<h1>This is heading 1</h1>",
+      "Note:  Only use one <h1> per page - this should represent the main heading/subject for the whole page. Also, do not skip heading levels - start with <h1>, then use <h2>, and so on.",
+      "h1-h6",
+      "xxaXMRg"
+    ],
+    [
+      "headAttr",
+      "head",
+      "The <head> element is a container for metadata (data about data) and is placed between the <html> tag and the <body> tag.",
+      "<head></head>",
+      "Note:  The following elements can go inside the <head> <title> (required in every HTML document)<style><base><link><meta><script><noscript>",
+      "head",
+      "YzOrBpY"
+    ],
+    [
+      "headerAttr",
+      "header",
+      "The <header> element represents a container for introductory content or a set of navigational links.",
+      "<header></header>",
+      "Note:  You can have several <header> elements in one HTML document. However, <header> cannot be placed within a <footer>, <address> or another <header> element.",
+      "header",
+      "RwYLvoM"
+    ],
+    [
+      "hrAttr",
+      "hr",
+      "The <hr> tag defines a thematic break in an HTML page (e.g. a shift of topic).",
+      "<hr>",
+      " Note:  The <hr> element is most often displayed as a horizontal rule that is used to separate content (or define a change) in an HTML page.",
+      "hr",
+      "MWqELPe"
+    ],
+    [
+      "htmlAttr",
+      "html",
+      "The <html> tag represents the root of an HTML document.",
+      "<html></html>",
+      "Note:  You should always include the lang attribute inside the <html> tag, to declare the language of the Web page. This is meant to assist search engines and browsers.",
+      "html",
+      "XWPeOxM"
+    ],
+    [
+      "iAttr",
+      "i",
+      "The <i> tag defines a part of text in an alternate voice or mood. The content inside is typically displayed in italic.",
+      "<i&gt</i>",
+      "Note:  The <i> tag is often used to indicate a technical term, a phrase from another language, a thought, a ship name, etc.",
+      "i",
+      "LYJzqgQ"
+    ],
+    [
+      "iframeAttr",
+      "iframe",
+      "The <iframe> tag specifies an inline frame. An inline frame is used to embed another document within the current HTML document.",
+      "<iframe></iframe>",
+      "Note:   It is a good practice to always include a title attribute for the <iframe>. This is used by screen readers to read out what the content of the <iframe> is.",
+      "iframe",
+      "GRXMzYP"
+    ],
+    [
+      "imgAttr",
+      "img",
+      "The <img> tag is used to embed an image in an HTML page.",
+      "<img>",
+      "Note:  Also, always specify the width and height of an image. If width and height are not specified, the page might flicker while the image loads.",
+      "img",
+      "WNgZPYN"
+    ],
+    [
+      "inputAttr",
+      "input",
+      "The <input> tag specifies an input field where the user can enter data.",
+      "<input>",
+      "Note:  Look at the type attribute to see examples for each input type!",
+      "input",
+      "yLxzZQO"
+    ],
+    [
+      "insAttr",
+      "ins",
+      "The <ins> tag defines a text that has been inserted into a document. Browsers will usually underline inserted text.",
+      "<ins></ins>",
+      "Note:  Also look at the <del> tag to markup deleted text.",
+      "ins",
+      "abaLXQy"
+    ],
+    [
+      "kbdAttr",
+      "kbd",
+      "The <kbd> tag is used to define keyboard input. The content inside is displayed in the browser's default monospace font.",
+      "<kbd></kbd>",
+      "Note:  his tag is not deprecated. However, it is possible to achieve richer effect by using CSS",
+      "kbd",
+      "LYJzqXQ"
+    ],
+    [
+      "labelAttr",
+      "label",
+      "The <label> tag defines a label for several elements",
+      "<label></label>",
+      "Note:  The for attribute of <label> must be equal to the id attribute of the related element to bind them together. A label can also be bound to an element by placing the element inside the <label> element. ",
+      "label",
+      "vYzebQz"
+    ],
+    [
+      "legendAttr",
+      "legend",
+      "The <legend> tag defines a caption for the <fieldset> element.",
+      "<legend></legend>",
+      "Note:  for more information <a href='//www.w3schools.com/tags/tag_legend.asp' target='_blank'>W3Schools.com</a>",
+      "legend",
+      "OJoxdaG"
+    ],
+    [
+      "liAttr",
+      "li",
+      "The <li> tag defines a list item. The <li> tag is used inside ordered lists(<ol>), unordered lists (<ul>), and in menu lists (<menu>).",
+      "<li></li>",
+      "Note:  Use CSS to style lists.",
+      "li",
+      "jOvGdXP"
+    ],
+    [
+      "linkAttr",
+      "link",
+      "The <link> tag defines the relationship between the current document and an external resource. The <link> tag is most often used to link to external style sheets or to add a favicon to your website.",
+      "<link>",
+      "Note:  The <link> element is an empty element, it contains attributes only.",
+      "link",
+      "KKxXJbd"
+    ],
+    [
+      "mainAttr",
+      "main",
+      "The <main> tag specifies the main content of a document.",
+      "<main></main>",
+      "Note:  There must not be more than one <main> element in a document. The <main> element must NOT be a descendant of an <article>, <aside>, <footer>, <header>, or <nav> element.",
+      "main",
+      "xxaXMmP"
+    ],
+    [
+      "mapAttr",
+      "map",
+      "The <map> tag is used to define an image map. An image map is an image with clickable areas.",
+      "<map></map>",
+      " Note:  The <map> element contains a number of <area> elements, that defines the clickable areas in the image map.",
+      "map",
+      "LYJzqMd"
+    ],
+    [
+      "markAttr",
+      "mark",
+      "The <mark> tag defines text that should be marked or highlighted.",
+      "<mark></mark>",
+      "Note:  for more information <a href='//www.w3schools.com/tags/tag_mark.asp' target='_blank'>W3Schools.com</a>",
+      "mark",
+      "vYzebvV"
+    ],
+    [
+      "metaAttr",
+      "meta",
+      "The <meta> tag defines metadata about an HTML document. Metadata is data (information) about data.",
+      "<meta>",
+      "Note:  Metadata will not be displayed on the page, but is machine parsable.",
+      "meta",
+      "PodJVXg"
+    ],
+    [
+      "meterAttr",
+      "meter",
+      "The <meter> tag defines a scalar measurement within a known range, or a fractional value. This is also known as a gauge.",
+      "<meter></meter>",
+      "Note:  The <meter> tag should not be used to indicate progress (as in a progress bar). For progress bars, use the <progress> tag.",
+      "meter",
+      "jOvGddb"
+    ],
+    [
+      "navAttr",
+      "nav",
+      "The <nav> tag defines a set of navigation links.",
+      "<nav></nav>",
+      "Note:  Notice that NOT all links of a document should be inside a <nav> element. The <nav> element is intended only for major blocks of navigation links.",
+      "nav",
+      "XWPeOOR"
+    ],
+    [
+      "noscriptAttr",
+      "noscript",
+      "The <noscript> tag defines an alternate content to be displayed to users that have disabled scripts in their browser or have a browser that doesn't support script.",
+      "<noscript></noscript>",
+      "Note:  The <noscript> element can be used in both <head> and <body>. When used inside <head>, the <noscript> element could only contain <link>, <style>, and <meta> elements.",
+      "noscript",
+      "qBMPggx"
+    ],
+    [
+      "objectAttr",
+      "object",
+      "The <object> tag defines a container for an external resource.",
+      "<object></object>",
+      "Note:  The external resource can be a web page, a picture, a media player, or a plug-in application.",
+      "object",
+      "VwGMggB"
+    ],
+    [
+      "olAttr",
+      "ol",
+      "The <ol> tag defines an ordered list. An ordered list can be numerical or alphabetical.",
+      "<ol></ol>",
+      "Note:  Use CSS to style lists.",
+      "ol",
+      "mdGBvva"
+    ],
+    [
+      "optgroupAttr",
+      "optgroup",
+      "The <optgroup> tag is used to group related options in a <select> element (drop-down list).",
+      "<optgroup></optgroup>",
+      "Note:  If you have a long list of options, groups of related options are easier to handle for a user.",
+      "optgroup",
+      "OJoxddY"
+    ],
+    [
+      "optionAttr",
+      "option",
+      "The <option> tag defines an option in a select list.",
+      "<option></option>",
+      "Note:  The <option> tag can be used without any attributes, but you usually need the value attribute, which indicates what is sent to the server on form submission.",
+      "option",
+      "NWLaoJW"
+    ],
+    [
+      "outputAttr",
+      "output",
+      "The <output> tag is used to represent the result of a calculation (like one performed by a script).",
+      "<output></output>",
+      " Note: ",
+      "output",
+      "ZEMXwPB"
+    ],
+    [
+      "pAttr",
+      "p",
+      "The <p> tag defines a paragraph.",
+      "<p></p>",
+      "Note:  Browsers automatically add a single blank line before and after each <p> element.",
+      "p",
+      "mdGBvoa"
+    ],
+    [
+      "paramAttr",
+      "param",
+      "The <param> tag is used to define parameters for an <object> element.",
+      "<param>",
+      " Note: ",
+      "param",
+      "wvErNOV"
+    ],
+    [
+      "pictureAttr",
+      "picture",
+      "The <picture> tag gives web developers more flexibility in specifying image resources.",
+      "<picture></picture>",
+      "<strong>Note: </strong>  The <picture> element works \"similar\" to <video> and <audio>. You set up different sources, and the first source that fits the preferences is the one being used.",
+      "picture",
+      "WNgZPWb"
+    ],
+    [
+      "preAttr",
+      "pre",
+      "The <pre> tag defines preformatted text.",
+      "<pre></pre>",
+      "Note:  Text in a <pre> element is displayed in a fixed-width font, and the text preserves both spaces and line breaks. The text will be displayed exactly as written in the HTML source code.",
+      "pre",
+      "yLxzZrJ"
+    ],
+    [
+      "progressAttr",
+      "progress",
+      "The <progress> tag represents the completion progress of a task.",
+      "<progress></progress>",
+      " Note:  Always add the <label> tag for best accessibility practices!",
+      "progress",
+      "XWPeOQg"
+    ],
+    [
+      "qAttr",
+      "q",
+      "The <q> tag defines a short quotation.",
+      "<q></q>",
+      " Note: Use <blockquote> for long quotations.",
+      "q",
+      "LYJzqvm"
+    ],
+    [
+      "sAttr",
+      "s",
+      "The <s> tag specifies text that is no longer correct, accurate or relevant. The text will be displayed with a line through it.",
+      "<s></s>",
+      " Note: The <s> tag should not be used to define deleted text in a document, use the <del> tag for that.",
+      "s",
+      "qBMPgGo"
+    ],
+    [
+      "sampAttr",
+      "samp",
+      "etiketi <samp>, bir bilgisayar programından örnek çıktıyı tanımlamak için kullanılır. İçerideki içerik, tarayıcının varsayılan tek aralıklı yazı tipinde görüntülenir.",
+      "<samp></samp>",
+      " Note: Bu etiket kullanımdan kaldırılmadı. Ancak CSS kullanarak daha zengin bir etki elde etmek mümkündür",
+      "samp",
+      "dyqVaEj"
+    ],
+    [
+      "scriptAttr",
+      "script",
+      "The <script> tag is used to embed a client-side script (JavaScript).",
+      "<script></script>",
+      " Note: Also look at the <noscript> element for users that have disabled scripts in their browser, or have a browser that doesn't support client-side scripting.",
+      "script",
+      "OJoxdYe"
+    ],
+    [
+      "sectionAttr",
+      "section",
+      "The <section> tag defines a section in a document.",
+      "<section></section>",
+      " <strong> </strong>The Section object supports the standard properties and events.",
+      "section",
+      "KKxXJjz"
+    ],
+    [
+      "selectAttr",
+      "select",
+      "The <select> element is used to create a drop-down list.",
+      "<select></select>",
+      " Note: Always add the <label> tag for best accessibility practices!",
+      "select",
+      "yLxzZda"
+    ],
+    [
+      "smallAttr",
+      "small",
+      "The <small> tag defines smaller text (like copyright and other side-comments).",
+      "<small></small>",
+      " Note:  This tag is not deprecated, but it is possible to achieve richer (or the same) effect with CSS.",
+      "small",
+      "rNZGPEm"
+    ],
+    [
+      "sourceAttr",
+      "source",
+      "The <source> tag is used to specify multiple media resources for media elements, such as <video>, <audio>, and <picture>.",
+      "<source></source>",
+      " Note: The <source> tag allows you to specify alternative video/audio/image files which the browser may choose from, based on browser support or viewport width. The browser will choose the first <source> it supports.",
+      "source",
+      "LYJzqKm"
+    ],
+    [
+      "spanAttr",
+      "span",
+      "The <span> tag is an inline container used to mark up a part of a text, or a part of a document.",
+      "<span></span>",
+      " Note: The <span> tag is much like the <div> element, but <div> is a block-level element and <span> is an inline element.",
+      "span",
+      "VwGMgJG"
+    ],
+    [
+      "strongAttr",
+      "strong",
+      "The <strong> tag is used to define text with strong importance. The content inside is typically displayed in bold",
+      "Note: ",
+      " Note: Use the <b> tag to specify bold text without any extra importance!",
+      "strong",
+      "BaOwMgX"
+    ],
+    [
+      "styleAttr",
+      "style",
+      "The <style> tag is used to define style information (CSS) for a document.",
+      "<style></style>",
+      " Note: When a browser reads a style sheet, it will format the HTML document according to the information in the style sheet. If some properties have been defined for the same selector (element) in different style sheets, the value from the last read style sheet will be used (see example below)!",
+      "style",
+      "QWVqYej"
+    ],
+    [
+      "subAttr",
+      "sub",
+      "The <sub> tag defines subscript text. Subscript text appears half a character below the normal line, and is sometimes rendered in a smaller font. Subscript text can be used for chemical formulas, like H2O.",
+      "<sub></sub>",
+      " Note: Use the <sub> tag to define superscripted text.",
+      "sub",
+      "eYLGxqW"
+    ],
+    [
+      "summaryAttr",
+      "summary",
+      "The <summary> tag defines a visible heading for the <details> element. The heading can be clicked to view/hide the details.",
+      "<summary></summary>",
+      " Note: The <summary> element should be the first child element of the <details> element.",
+      "summary",
+      "Exewrqb"
+    ],
+    [
+      "supAttr",
+      "sup",
+      "The <sup> tag defines superscript text. Superscript text appears half a character above the normal line, and is sometimes rendered in a smaller font. Superscript text can be used for footnotes, like WWW[1].",
+      "<sup></sup>",
+      " Note: Use the <sup> tag to define subscript text.",
+      "sup",
+      "vYzebov"
+    ],
+    [
+      "svgAttr",
+      "svg",
+      "The <svg> tag defines a container for SVG graphics.",
+      "<svg></svg>",
+      " Note: SVG has several methods for drawing paths, boxes, circles, text, and graphic images.",
+      "svg",
+      "gOdGqVJ"
+    ],
+    [
+      "tableAttr",
+      "table",
+      "The <table> tag defines an HTML table.",
+      "<table></table>",
+      " Note: An HTML table consists of one <table> element and one or more <tr>, <th>, and <td> elements.",
+      "table",
+      "QWVqoLy"
+    ],
+    [
+      "tbodyAttr",
+      "tbody",
+      "The <tbody> tag is used to group the body content in an HTML table.",
+      "<tbody></tbody>",
+      " Note: The <tbody> element must have one or more <tr> tags inside.",
+      "tbody",
+      "yLxzwBV"
+    ],
+    [
+      "tdAttr",
+      "td",
+      "The <td> tag defines a standard data cell in an HTML table.",
+      "<td></td>",
+      " Note: The text in <td> elements are regular and left-aligned by default.",
+      "td",
+      "XWPeGra"
+    ],
+    [
+      "templateAttr",
+      "template",
+      "The <template> tag is used as a container to hold some HTML content hidden from the user when the page loads.",
+      "<template></template>",
+      " Note: The content inside <template&gt",
+      "template",
+      "YzOrgKR"
+    ],
+    [
+      "textareaAttr",
+      "textarea",
+      "The <textarea> tag defines a multi-line text input control.",
+      "<textarea></textarea>",
+      " Note: Always add the <label> tag for best accessibility practices!",
+      "textarea",
+      "jOvGJOq"
+    ],
+    [
+      "tfootAttr",
+      "tfoot",
+      "The <tfoot> tag is used to group footer content in an HTML table.",
+      "<tfoot></tfoot>",
+      " Note: The <tfoot></tfoot> element must have one or more <tr> tags inside.",
+      "tfoot",
+      "yLxzwLV"
+    ],
+    [
+      "thAttr",
+      "th",
+      "The <th> tag defines a header cell in an HTML table.",
+      "<th></th>",
+      " Note: The text in <th> elements are bold and centered by default.",
+      "th",
+      "eYLGXYW"
+    ],
+    [
+      "theadAttr",
+      "thead",
+      "The <thead> tag is used to group header content in an HTML table.",
+      "<thead></thead>",
+      " Note: The <thead> element must have one or more <tr> tags inside.",
+      "thead",
+      "xxaXBxY"
+    ],
+    [
+      "timeAttr",
+      "time",
+      "The >time> tag defines a specific time (or datetime).",
+      ">time>>/time>",
+      " Note: The datetime attribute of this element is used translate the time into a machine-readable format so that browsers can offer to add date reminders through the user's calendar, and search engines can produce smarter search results.",
+      "time",
+      "VwGMRwE"
+    ],
+    [
+      "titleAttr",
+      "title",
+      "The <title> tag defines the title of the document. The title must be text-only, and it is shown in the browser's title bar or in the page's tab.",
+      "<title></title>",
+      " Note:  You can NOT have more than one <title> element in an HTML document.",
+      "title",
+      "BaOwbyB"
+    ],
+    [
+      "trAttr",
+      "tr",
+      "The <tr> tag defines a row in an HTML table.",
+      "<tr></tr>",
+      " Note: A <tr> element contains one or more <th> or <td> elements.",
+      "tr",
+      "QWVqowy"
+    ],
+    [
+      "trackAttr",
+      "track",
+      "The <track> tag specifies text tracks for <audio> or <video> elements.",
+      "<track>",
+      " Note: Tracks are formatted in WebVTT format (.vtt files).",
+      "track",
+      "ZEMXPYK"
+    ],
+    [
+      "uAttr",
+      "u",
+      "The <u> tag represents some text that is unarticulated and styled differently from normal text, such as misspelled words or proper names in Chinese text. The content inside is typically displayed with an underline. You can change this with CSS (see example below).",
+      "<u></u>",
+      " Note: Avoid using the <u> element where it could be confused for a hyperlink!",
+      "u",
+      "LYJzaEB"
+    ],
+    [
+      "ulAttr",
+      "ul",
+      "The <ul> tag defines an unordered (bulleted) list.",
+      "&<ul></ul>",
+      " Note: For ordered lists, use the <ol> tag.",
+      "ul",
+      "VwGMRYV"
+    ],
+    [
+      "varAttr",
+      "var",
+      "The <var> tag is used to defines a variable in programming or in a mathematical expression. The content inside is typically displayed in italic.",
+      "<var></var>",
+      " Note:  This tag is not deprecated. However, it is possible to achieve richer effect by using CSS.",
+      "var",
+      "PodJLwM"
+    ],
+    [
+      "videoAttr",
+      "video",
+      "The <video> tag is used to embed video content in a document, such as a movie clip or other video streams.",
+      "<video></video>",
+      " Note: The <video> tag contains one or more <source> tags with different video sources. The browser will choose the first source it supports.",
+      "video",
+      "BaOwbNa"
+    ],
+    [
+      "wbrAttr",
+      "wbr",
+      "The <wbr> (Word Break Opportunity) tag specifies where in a text it would be ok to add a line-break.",
+      "<wbr>",
+      " Note: When a word is too long, the browser might break it at the wrong place. You can use the <wbr> element to add word break opportunities.",
+      "wbr",
+      "jOvGJPr"
+    ]
+  ],
+  [
+    [
+      "None"
+    ],
+    [
+      "None"
+    ],
+    [
+      "Global Attributes",
+      "download",
+      "href",
+      "hreflang",
+      "media",
+      "ping",
+      "referrerpolicy",
+      "rel",
+      "target",
+      "type"
+    ],
+    [
+      "Global Attributes"
+    ],
+    [
+      "Global Attributes"
+    ],
+    [
+      "Global Attributes",
+      "alt",
+      "coords",
+      "download",
+      "href",
+      "hreflang",
+      "media",
+      "referrerpolicy",
+      "rel",
+      "shape",
+      "target",
+      "type"
+    ],
+    [
+      "Global Attributes"
+    ],
+    [
+      "Global Attributes"
+    ],
+    [
+      "Global Attributes",
+      "autoplay",
+      "controls",
+      "loop",
+      "muted",
+      "preload",
+      "src"
+    ],
+    [
+      "Global Attributes"
+    ],
+    [
+      "Global Attributes",
+      "href",
+      "target"
+    ],
+    [
+      "Global Attributes"
+    ],
+    [
+      "Global Attributes"
+    ],
+    [
+      "Global Attributes",
+      "cite"
+    ],
+    [
+      "Global Attributes"
+    ],
+    [
+      "Global Attributes"
+    ],
+    [
+      "Global Attributes",
+      "autofocus",
+      "disabled",
+      "form",
+      "formaction",
+      "formenctype",
+      "formmethod",
+      "formnovalidate",
+      "formtarget",
+      "name",
+      "type",
+      "value"
+    ],
+    [
+      "Global Attributes",
+      "height",
+      "width"
+    ],
+    [
+      "Global Attributes"
+    ],
+    [
+      "Global Attributes"
+    ],
+    [
+      "Global Attributes"
+    ],
+    [
+      "Global Attributes",
+      "span"
+    ],
+    [
+      "Global Attributes",
+      "span"
+    ],
+    [
+      "Global Attributes",
+      "value"
+    ],
+    [
+      "Global Attributes"
+    ],
+    [
+      "Global Attributes"
+    ],
+    [
+      "Global Attributes",
+      "cite",
+      "datetime"
+    ],
+    [
+      "Global Attributes",
+      "open"
+    ],
+    [
+      "Global Attributes"
+    ],
+    [
+      "Global Attributes",
+      "open"
+    ],
+    [
+      "Global Attributes"
+    ],
+    [
+      "Global Attributes"
+    ],
+    [
+      "Global Attributes"
+    ],
+    [
+      "Global Attributes"
+    ],
+    [
+      "Global Attributes",
+      "height",
+      "src",
+      "type",
+      "width"
+    ],
+    [
+      "Global Attributes",
+      "disabled",
+      "form",
+      "name"
+    ],
+    [
+      "Global Attributes"
+    ],
+    [
+      "Global Attributes"
+    ],
+    [
+      "Global Attributes"
+    ],
+    [
+      "Global Attributes",
+      "accept-charset",
+      "action",
+      "autocomplete",
+      "enctype",
+      "method",
+      "name",
+      "novalidate",
+      "rel",
+      "target"
+    ],
+    [
+      "Global Attributes"
+    ],
+    [
+      "Global Attributes"
+    ],
+    [
+      "Global Attributes"
+    ],
+    [
+      "Global Attributes"
+    ],
+    [
+      "Global Attributes",
+      "xmlns"
+    ],
+    [
+      "Global Attributes"
+    ],
+    [
+      "Global Attributes",
+      "allow",
+      "allowfullscreen",
+      "allowpaymentrequest",
+      "height",
+      "loading",
+      "name",
+      "referrerpolicy",
+      "sandbox",
+      "src",
+      "srcdoc",
+      "width"
+    ],
+    [
+      "Global Attributes",
+      "alt",
+      "crossorigin",
+      "height",
+      "ismap",
+      "loading",
+      "longdesc",
+      "referrerpolicy",
+      "sizes",
+      "src",
+      "srcset",
+      "usemap",
+      "width"
+    ],
+    [
+      "Global Attributes",
+      "accept",
+      "alt",
+      "autocomplete",
+      "autofocus",
+      "checked",
+      "dirname",
+      "disabled",
+      "form",
+      "formaction",
+      "formenctype",
+      "formmethod",
+      "formnovalidate",
+      "formtarget",
+      "height",
+      "list",
+      "max",
+      "maxlength",
+      "mix",
+      "minlength",
+      "multiple",
+      "name",
+      "pattern",
+      "placeholder",
+      "readonly",
+      "required",
+      "size",
+      "src",
+      "step",
+      "type",
+      "value",
+      "width"
+    ],
+    [
+      "Global Attributes",
+      "cite",
+      "datetime"
+    ],
+    [
+      "Global Attributes"
+    ],
+    [
+      "Global Attributes",
+      "for",
+      "form"
+    ],
+    [
+      "Global Attributes"
+    ],
+    [
+      "Global Attributes",
+      "value"
+    ],
+    [
+      "Global Attributes",
+      "crossorigin",
+      "href",
+      "hreflang",
+      "media",
+      "referrerpolicy",
+      "rel",
+      "sizes",
+      "title",
+      "type"
+    ],
+    [
+      "Global Attributes"
+    ],
+    [
+      "Global Attributes",
+      "name"
+    ],
+    [
+      "Global Attributes"
+    ],
+    [
+      "Global Attributes",
+      "charset",
+      "content",
+      "http-equiv",
+      "name"
+    ],
+    [
+      "Global Attributes",
+      "form",
+      "high",
+      "low",
+      "max",
+      "min",
+      "optimum",
+      "value"
+    ],
+    [
+      "Global Attributes"
+    ],
+    [
+      "Global Attributes"
+    ],
+    [
+      "Global Attributes",
+      "data",
+      "form",
+      "height",
+      "name",
+      "type",
+      "typemustmatch",
+      "usemap",
+      "width"
+    ],
+    [
+      "Global Attributes",
+      "reversed",
+      "start",
+      "type"
+    ],
+    [
+      "Global Attributes",
+      "disabled",
+      "label"
+    ],
+    [
+      "Global Attributes",
+      "disabled",
+      "label",
+      "selected",
+      "value"
+    ],
+    [
+      "Global Attributes",
+      "for",
+      "form",
+      "name"
+    ],
+    [
+      "Global Attributes"
+    ],
+    [
+      "Global Attributes",
+      "name",
+      "value"
+    ],
+    [
+      "Global Attributes"
+    ],
+    [
+      "Global Attributes"
+    ],
+    [
+      "Global Attributes",
+      "max",
+      "value"
+    ],
+    [
+      "Global Attributes",
+      "cite"
+    ],
+    [
+      "Global Attributes"
+    ],
+    [
+      "Global Attributes"
+    ],
+    [
+      "Global Attributes"
+    ],
+    [
+      "Global Attributes"
+    ],
+    [
+      "Global Attributes"
+    ],
+    [
+      "Global Attributes",
+      "async",
+      "crossorigin",
+      "defer",
+      "integrity",
+      "nomodule",
+      "referrerpolicy",
+      "src",
+      "type"
+    ],
+    [
+      "Global Attributes"
+    ],
+    [
+      "Global Attributes",
+      "autofocus",
+      "disabled",
+      "form",
+      "multiple",
+      "name",
+      "required",
+      "size"
+    ],
+    [
+      "Global Attributes"
+    ],
+    [
+      "Global Attributes",
+      "media",
+      "sizes",
+      "src",
+      "srcset",
+      "type"
+    ],
+    [
+      "Global Attributes"
+    ],
+    [
+      "Global Attributes"
+    ],
+    [
+      "Global Attributes",
+      "media",
+      "type"
+    ],
+    [
+      "Global Attributes"
+    ],
+    [
+      "Global Attributes"
+    ],
+    [
+      "Global Attributes"
+    ],
+    [
+      "width",
+      "height"
+    ],
+    [
+      "Global Attributes"
+    ],
+    [
+      "Global Attributes"
+    ],
+    [
+      "Global Attributes"
+    ],
+    [
+      "Global Attributes"
+    ],
+    [
+      "Global Attributes",
+      "autofocus",
+      "cols",
+      "dirname",
+      "disabled",
+      "form",
+      "maxlength",
+      "name",
+      "placeholder",
+      "readonly",
+      "required",
+      "rows",
+      "wrap"
+    ],
+    [
+      "Global Attributes"
+    ],
+    [
+      "Global Attributes",
+      "abbr",
+      "colspan",
+      "headers",
+      "rowspan",
+      "scope"
+    ],
+    [
+      "Global Attributes"
+    ],
+    [
+      "Global Attributes",
+      "datetime"
+    ],
+    [
+      "Global Attributes"
+    ],
+    [
+      "Global Attributes"
+    ],
+    [
+      "Global Attributes",
+      "default",
+      "kind",
+      "label",
+      "src",
+      "srclang"
+    ],
+    [
+      "Global Attributes"
+    ],
+    [
+      "Global Attributes"
+    ],
+    [
+      "Global Attributes"
+    ],
+    [
+      "Global Attributes",
+      "autoplay",
+      "controls",
+      "height",
+      "loop",
+      "muted",
+      "poster",
+      "preload",
+      "src",
+      "width"
+    ],
+    [
+      "Global Attributes"
+    ]
+  ],
+  []
+]

@@ -1,405 +1,116 @@
+"use strict";
 
+// Add event listener to execute code after DOM content loads
+window.addEventListener("DOMContentLoaded", () => {
 
-let tagDetailObj = [
-    tagId = ["comment", "doctype", "a", "abbr", "address", "area", "article", "aside", "audio", "b", "base", "bdi", "bdo", "blockquote", "body", "br", "button", "canvas", "caption", "center", "cite", "code", "col", "colegroup", "data", "datalist", "dd", "del", "details", "dfn", "dialog", "dir", "div", "dl", "dt", "em", "embed", "fieldset", "figcaption", "figure", "footer", "form", "h1", "head", "header", "hr", "html", "i", "iframe", "img", "input", "ins", "kbd", "label", "legend", "li", "link", "main", "map", "mark", "meta", "meter", "nav", "noscript", "object", "ol", "optgroup", "option", "output", "p", "param", "picture", "pre", "progress", "q", "rp", "rt", "ruby", "s", "samp", "script", "section", "select", "small", "source", "span", "strong", "style", "sub", "summary", "sup", "svg", "table", "tbody", "td", "template", "textarea", "tfoot", "th", "thead", "time", "title", "tr", "track", "u", "ul", "var", "video", "wbr"],
-    comment = ["commentAttr", "comment", "You can add comments to your HTML source by using the following;", "&lt;!-- Write your comments here --&gt;", " Note= Comments are not displayed by the browser, but they can help document your HTML source code.", "None", "Comment", "qBKOVJm"],
-    doctype = ["doctypeAttr", "doctype", "All HTML documents must start with a <!DOCTYPE> declaration. The declaration is not an HTML tag. It is an \"information\" to the browser about what document type to expect.", "&lt;! DOCTYPE html&gt;", " Note= The &lt;!DOCTYPE&gt; declaration is NOT case sensitive.", "None", "!DOCTYPE html", "NWLRWbW"],
-    a = ["aAttr", "a", "The &lt;a&gt; tag defines a hyperlink, which is used to link from one page to another.", "&lt;a href='URL'>Text&lt;/a&gt;", " Note= If the <a> tag has no href attribute, it is only a placeholder for a hyperlink.<br>A linked page is normally displayed in the current browser window, unless you specify another target.", "download<br>href<br>hreflang<br>media<br>ping<br>referrerpolicy<br>rel<br>target<br>type<br>", "a", "QWVKWpj"],
-    abbr = ["abbrAttr", "abbr", "açıklama", "&lt;! DOCTYPE&gt;", " Note=", "None", "abbr", "YzOrRoP"],
-    address = ["addressAttr", "address", "açıklama", "&lt;! DOCTYPE&gt;", " Note=", "None", "address", "ZEMXmdj"],
-    area = ["areaAttr", "area", "açıklama", "&lt;! DOCTYPE&gt;", " Note=", "None", "area", "xxaXQoe"],
-    article = ["articleAttr", "article", "açıklama", "&lt;! DOCTYPE&gt;", " Note=", "None", "article", "oNPGQKv"],
-    aside = ["asideAttr", "aside", "açıklama", "&lt;! DOCTYPE&gt;", " Note=", "None", "aside", "gOdGQVw"],
-    audio = ["audioAttr", "audio", "açıklama", "&lt;! DOCTYPE&gt;", " Note=", "None", "audio", "VwGMqZY"],
-    b = ["bAttr", "b", "açıklama", "&lt;! DOCTYPE&gt;", " Note=", "None", "b", "PodJXYb"],
-    base = ["baseAttr", "base", "açıklama", "&lt;! DOCTYPE&gt;", " Note=", "None", "base", "bGxoObR"],
-    bdi = ["bdiAttr", "bdi", "açıklama", "&lt;! DOCTYPE&gt;", " Note=", "None", "bdi", "KKxXbPQ"],
-    bdo = ["bdoAttr", "bdo", "açıklama", "&lt;! DOCTYPE&gt;", " Note=", "None", "bdo", "ExewGYr"],
-    blockquote = ["blockquoteAttr", "blockquote", "açıklama", "&lt;! DOCTYPE&gt;", " Note=", "None", "blockquote", "RwYLEwr"],
-    body = ["bodyAttr", "body", "açıklama", "&lt;! DOCTYPE&gt;", " Note=", "None", "body", "YzOrBPr"],
-    br = ["brAttr", "br", "açıklama", "&lt;! DOCTYPE&gt;", " Note=", "None", "br", "ZEMXwGE"],
-    button = ["buttonAttr", "button", "açıklama", "&lt;! DOCTYPE&gt;", " Note=", "None", "button", "xxaXMGE"],
-    canvas = ["canvasAttr", "canvas", "açıklama", "&lt;! DOCTYPE&gt;", " Note=", "None", "canvas", "dyqVaoR"],
-    caption = ["captionAttr", "caption", "açıklama", "&lt;! DOCTYPE&gt;", " Note=", "None", "caption", "GRXMzJx"],
-    center = ["centerAttr", "center", "açıklama", "&lt;! DOCTYPE&gt;", " Note=", "None", "center", "bGxozdQ"],
-    cite = ["citeAttr", "cite", "açıklama", "&lt;! DOCTYPE&gt;", " Note=", "None", "cite", "WNgZPvP"],
-    code = ["codeAttr", "code", "açıklama", "&lt;! DOCTYPE&gt;", " Note=", "None", "code", "XWPeOmm"],
-    col = ["colAttr", "col", "açıklama", "&lt;! DOCTYPE&gt;", " Note=", "None", "col", "abaLXvZ"],
-    colegroup = ["colegroupAttr", "colegroup", "açıklama", "&lt;! DOCTYPE&gt;", " Note=", "None", "colgroup", "LYJzqpW"],
-    data = ["dataAttr", "data", "açıklama", "&lt;! DOCTYPE&gt;", " Note=", "None", "data", "RwYLvWx"],
-    datalist = ["datalistAttr", "datalist", "açıklama", "&lt;! DOCTYPE&gt;", " Note=", "None", "datalist", "BaOwMoO"],
-    dd = ["ddAttr", "dd", "açıklama", "&lt;! DOCTYPE&gt;", " Note=", "None", "dd", "yLxzZYm"],
-    del = ["delAttr", "del", "açıklama", "&lt;! DOCTYPE&gt;", " Note=", "None", "del", "rNZGPxO"],
-    details = ["detailsAttr", "details", "açıklama", "&lt;! DOCTYPE&gt;", " Note=", "None", "details", "abaLXdm"],
-    dfn = ["dfnAttr", "dfn", "açıklama", "&lt;! DOCTYPE&gt;", " Note=", "None", "dfn", "qBMPgbr"],
-    dialog = ["dialogAttr", "dialog", "açıklama", "&lt;! DOCTYPE&gt;", " Note=", "None", "dialog", "GRXMzod"],
-    dir = ["dirAttr", "dir", "açıklama", "&lt;! DOCTYPE&gt;", " Note=", "None", "dir", "KKxXJVj"],
-    div = ["divAttr", "div", "açıklama", "&lt;! DOCTYPE&gt;", " Note=", "None", "div", "bGxozEO"],
-    dl = ["dlAttr", "dl", "açıklama", "&lt;! DOCTYPE&gt;", " Note=", "None", "dl", "zYJEeqq"],
-    dt = ["dtAttr", "dt", "açıklama", "&lt;! DOCTYPE&gt;", " Note=", "None", "dt", "JjarxXE"],
-    em = ["emAttr", "em", "açıklama", "&lt;! DOCTYPE&gt;", " Note=", "None", "em", "YzOrBqE"],
-    embed = ["embedAttr", "embed", "açıklama", "&lt;! DOCTYPE&gt;", " Note=", "None", "embed", "RwYLvaQ"],
-    fieldset = ["fieldsetAttr", "fieldset", "açıklama", "&lt;! DOCTYPE&gt;", " Note=", "None", "fieldset", "WNgZPwm"],
-    figcaption = ["figcaptionAttr", "figcaption", "açıklama", "&lt;! DOCTYPE&gt;", " Note=", "None", "figcaption", "poOWGyM"],
-    figure = ["figureAttr", "figure", "açıklama", "&lt;! DOCTYPE&gt;", " Note=", "None", "figure", "XWPeOKX"],
-    footer = ["footerAttr", "footer", "açıklama", "&lt;! DOCTYPE&gt;", " Note=", "None", "footer", "LYJzqRL"],
-    form = ["formAttr", "form", "açıklama", "&lt;! DOCTYPE&gt;", " Note=", "None", "form", "VwGrYxK"],
-    h1 = ["h1Attr", "h1", "açıklama", "&lt;! DOCTYPE&gt;", " Note=", "None", "h1-h6", "xxaXMRg"],
-    head = ["headAttr", "head", "açıklama", "&lt;! DOCTYPE&gt;", " Note=", "None", "head", "YzOrBpY"],
-    header = ["headerAttr", "header", "açıklama", "&lt;! DOCTYPE&gt;", " Note=", "None", "header", "RwYLvoM"],
-    hr = ["hrAttr", "hr", "açıklama", "&lt;! DOCTYPE&gt;", " Note=", "None", "hr", "MWqELPe"],
-    html = ["htmlAttr", "html", "açıklama", "&lt;! DOCTYPE&gt;", " Note=", "None", "html", "XWPeOxM"],
-    i = ["iAttr", "i", "açıklama", "&lt;! DOCTYPE&gt;", " Note=", "None", "i", "LYJzqgQ"],
-    iframe = ["iframeAttr", "iframe", "açıklama", "&lt;! DOCTYPE&gt;", " Note=", "None", "iframe", "GRXMzYP"],
-    img = ["imgAttr", "img", "açıklama", "&lt;! DOCTYPE&gt;", " Note=", "None", "img", "WNgZPYN"],
-    input = ["inputAttr", "input", "açıklama", "&lt;! DOCTYPE&gt;", " Note=", "None", "input", "yLxzZQO"],
-    ins = ["insAttr", "ins", "açıklama", "&lt;! DOCTYPE&gt;", " Note=", "None", "ins", "abaLXQy"],
-    kbd = ["kbdAttr", "kbd", "açıklama", "&lt;! DOCTYPE&gt;", " Note=", "None", "kbd", "LYJzqXQ"],
-    label = ["labelAttr", "label", "açıklama", "&lt;! DOCTYPE&gt;", " Note=", "None", "label", "vYzebQz"],
-    legend = ["legendAttr", "legend", "açıklama", "&lt;! DOCTYPE&gt;", " Note=", "None", "legend", "OJoxdaG"],
-    li = ["liAttr", "li", "açıklama", "&lt;! DOCTYPE&gt;", " Note=", "None", "li", "jOvGdXP"],
-    link = ["linkAttr", "link", "açıklama", "&lt;! DOCTYPE&gt;", " Note=", "None", "link", "KKxXJbd"],
-    main = ["mainAttr", "main", "açıklama", "&lt;! DOCTYPE&gt;", " Note=", "None", "main", "xxaXMmP"],
-    map = ["mapAttr", "map", "açıklama", "&lt;! DOCTYPE&gt;", " Note=", "None", "map", "LYJzqMd"],
-    mark = ["markAttr", "mark", "açıklama", "&lt;! DOCTYPE&gt;", " Note=", "None", "mark", "vYzebvV"],
-    meta = ["metaAttr", "meta", "açıklama", "&lt;! DOCTYPE&gt;", " Note=", "None", "meta", "PodJVXg"],
-    meter = ["meterAttr", "meter", "açıklama", "&lt;! DOCTYPE&gt;", " Note=", "None", "meter", "jOvGddb"],
-    nav = ["navAttr", "nav", "açıklama", "&lt;! DOCTYPE&gt;", " Note=", "None", "nav", "XWPeOOR"],
-    noscript = ["noscriptAttr", "noscript", "açıklama", "&lt;! DOCTYPE&gt;", " Note=", "None", "noscript", "qBMPggx"],
-    object = ["objectAttr", "object", "açıklama", "&lt;! DOCTYPE&gt;", " Note=", "None", "object", "VwGMggB"],
-    ol = ["olAttr", "ol", "açıklama", "&lt;! DOCTYPE&gt;", " Note=", "None", "ol", "mdGBvva"],
-    optgroup = ["optgroupAttr", "optgroup", "açıklama", "&lt;! DOCTYPE&gt;", " Note=", "None", "optgroup", "OJoxddY"],
-    option = ["optionAttr", "option", "açıklama", "&lt;! DOCTYPE&gt;", " Note=", "None", "option", "NWLaoJW"],
-    output = ["outputAttr", "output", "açıklama", "&lt;! DOCTYPE&gt;", " Note=", "None", "output", "ZEMXwPB"],
-    p = ["pAttr", "p", "açıklama", "&lt;! DOCTYPE&gt;", " Note=", "None", "p", "mdGBvoa"],
-    param = ["paramAttr", "param", "açıklama", "&lt;! DOCTYPE&gt;", " Note=", "None", "param", "wvErNOV"],
-    picture = ["pictureAttr", "picture", "açıklama", "&lt;! DOCTYPE&gt;", " Note=", "None", "picture", "WNgZPWb"],
-    pre = ["preAttr", "pre", "açıklama", "&lt;! DOCTYPE&gt;", " Note=", "None", "pre", "yLxzZrJ"],
-    progress = ["progressAttr", "progress", "açıklama", "&lt;! DOCTYPE&gt;", " Note=", "None", "progress", "XWPeOQg"],
-    q = ["qAttr", "q", "açıklama", "&lt;! DOCTYPE&gt;", " Note=", "None", "q", "LYJzqvm"],
-    rp = ["rpAttr", "rp", "açıklama", "&lt;! DOCTYPE&gt;", " Note=", "None", "rp", "bGxozyG"],
-    rt = ["rtAttr", "rt", "açıklama", "&lt;! DOCTYPE&gt;", " Note=", "None", "rt", "MWqELdb"],
-    ruby = ["rubyAttr", "ruby", "açıklama", "&lt;! DOCTYPE&gt;", " Note=", "None", "ruby", "abaLXrV"],
-    s = ["sAttr", "s", "açıklama", "&lt;! DOCTYPE&gt;", " Note=", "None", "s", "qBMPgGo"],
-    samp = ["sampAttr", "samp", "açıklama", "&lt;! DOCTYPE&gt;", " Note=", "None", "samp", "dyqVaEj"],
-    script = ["scriptAttr", "script", "açıklama", "&lt;! DOCTYPE&gt;", " Note=", "None", "script", "OJoxdYe"],
-    section = ["sectionAttr", "section", "açıklama", "&lt;! DOCTYPE&gt;", " Note=", "None", "section", "KKxXJjz"],
-    select = ["selectAttr", "select", "açıklama", "&lt;! DOCTYPE&gt;", " Note=", "None", "select", "yLxzZda"],
-    small = ["smallAttr", "small", "açıklama", "&lt;! DOCTYPE&gt;", " Note=", "None", "small", "rNZGPEm"],
-    source = ["sourceAttr", "source", "açıklama", "&lt;! DOCTYPE&gt;", " Note=", "None", "source", "LYJzqKm"],
-    span = ["spanAttr", "span", "açıklama", "&lt;! DOCTYPE&gt;", " Note=", "None", "span", "VwGMgJG"],
-    strong = ["strongAttr", "strong", "açıklama", "&lt;! DOCTYPE&gt;", " Note=", "None", "strong", "BaOwMgX"],
-    style = ["styleAttr", "style", "açıklama", "&lt;! DOCTYPE&gt;", " Note=", "None", "style", "QWVqYej"],
-    sub = ["subAttr", "sub", "açıklama", "&lt;! DOCTYPE&gt;", " Note=", "None", "sub", "eYLGxqW"],
-    summary = ["summaryAttr", "summary", "açıklama", "&lt;! DOCTYPE&gt;", " Note=", "None", "summary", "Exewrqb"],
-    sup = ["supAttr", "sup", "açıklama", "&lt;! DOCTYPE&gt;", " Note=", "None", "sup", "vYzebov"],
-    svg = ["svgAttr", "svg", "açıklama", "&lt;! DOCTYPE&gt;", " Note=", "None", "svg", "gOdGqVJ"],
-    table = ["tableAttr", "table", "açıklama", "&lt;! DOCTYPE&gt;", " Note=", "None", "table", "QWVqoLy"],
-    tbody = ["tbodyAttr", "tbody", "açıklama", "&lt;! DOCTYPE&gt;", " Note=", "None", "tbody", "yLxzwBV"],
-    td = ["tdAttr", "td", "açıklama", "&lt;! DOCTYPE&gt;", " Note=", "None", "td", "XWPeGra"],
-    template = ["templateAttr", "template", "açıklama", "&lt;! DOCTYPE&gt;", " Note=", "None", "template", "YzOrgKR"],
-    textarea = ["textareaAttr", "textarea", "açıklama", "&lt;! DOCTYPE&gt;", " Note=", "None", "textarea", "jOvGJOq"],
-    tfoot = ["tfootAttr", "tfoot", "açıklama", "&lt;! DOCTYPE&gt;", " Note=", "None", "tfoot", "yLxzwLV"],
-    th = ["thAttr", "th", "açıklama", "&lt;! DOCTYPE&gt;", " Note=", "None", "th", "eYLGXYW"],
-    thead = ["theadAttr", "thead", "açıklama", "&lt;! DOCTYPE&gt;", " Note=", "None", "thead", "xxaXBxY"],
-    time = ["timeAttr", "time", "açıklama", "&lt;! DOCTYPE&gt;", " Note=", "None", "time", "VwGMRwE"],
-    title = ["titleAttr", "title", "açıklama", "&lt;! DOCTYPE&gt;", " Note=", "None", "title", "BaOwbyB"],
-    tr = ["trAttr", "tr", "açıklama", "&lt;! DOCTYPE&gt;", " Note=", "None", "tr", "QWVqowy"],
-    track = ["trackAttr", "track", "açıklama", "&lt;! DOCTYPE&gt;", " Note=", "None", "track", "ZEMXPYK"],
-    u = ["uAttr", "u", "açıklama", "&lt;! DOCTYPE&gt;", " Note=", "None", "u", "LYJzaEB"],
-    ul = ["ulAttr", "ul", "açıklama", "&lt;! DOCTYPE&gt;", " Note=", "None", "ul", "VwGMRYV"],
-    // var = ["varAttr", "var", "açıklama", "&lt;! DOCTYPE&gt;", " Note=", "None", "var", "PodJLwM"],
-    video = ["videoAttr", "video", "açıklama", "&lt;! DOCTYPE&gt;", " Note=", "None", "video", "BaOwbNa"],
-    wbr = ["wbrAttr", "wbr", "açıklama", "&lt;! DOCTYPE&gt;", " Note=", "None", "wbr", "jOvGJPr"]
-]
+  // Declare variables to be used globally
+  let createLiTag,
+    tagId,
+    tagDetailObj,
+    attrList,
+    allTags,
+    modifiedFrameSrcPath;
 
-//CREATE LAG LI TAGS *START*
+  // Get necessary elements from the DOM
+  const tagsUl = document.getElementById("tags"), // Ul element for tags
+    tagDetail = document.getElementById("tagDetails"), // Tag detail section
+    tagIdAttr = document.querySelector(".tagInfo"), // Tag ID element
+    tagHeader = document.querySelector(".tagHeader"), // Tag header element
+    tagDesc = document.querySelector(".tagDecTxt"), // Tag description element
+    tagCode = document.querySelector(".code"), // Tag code example element
+    tagNote = document.querySelector(".note"), // Tag note element
+    tagIframe = document.getElementById("iframe"), // Iframe element
+    newIframeSrc = new URL("https://codepen.io/onepagehtml/embed/?default-tab=html%2Cresult"), // Default iframe URL
+    newIframePenSrc = new URL("https://codepen.io/onepagehtml/pen/"), // Default pen URL
+    searchInput = document.getElementById("search"); // Search input element
 
-const tagsUl = document.getElementById("tags")
-for (let i = 0; i < tagId.length; i++) {
-    const createLi = document.createElement("li")
-    createLi.setAttribute("id", tagId[i])
-    createLi.classList.add("tag")
-    createLi.textContent = tagId[i]
-    tagsUl.append(createLi)
-}
-//CREATE LAG LI TAGS *END*
+  // Function to create HTML elements
+  function createElem(tagName, idName, className, text, appendElem) {
+    createLiTag = document.createElement(tagName);
+    createLiTag.setAttribute("id", idName);
+    createLiTag.classList.add(className);
+    createLiTag.textContent = text;
+    appendElem.append(createLiTag);
+    allTags = document.querySelectorAll(".tag"); // Get all tag elements
+  }
 
+  // Function to set the iframe source
+  function setIframeSrc(iframeSrc) {
+    let iframeSrcPath = iframeSrc; // New code will be inserted here
+    newIframeSrc.pathname = "/onepagehtml/embed/" + iframeSrcPath;
+    newIframePenSrc.pathname = "/onepagehtml/pen/" + iframeSrcPath;
+    modifiedFrameSrcPath = newIframeSrc.toString();
+    tagIframe.setAttribute("src", modifiedFrameSrcPath);
+  }
 
-const tagArray = document.getElementsByClassName("tag")
-let tagDetailTag = document.getElementById("tagDetails")
+  // Function to change the displayed data in the tag detail section
+  function changeDetailData(tagId, tagHeaderText, tagDescText, tagCodeExample, tagNoteText, iframeSrc) {
+    setIframeSrc(iframeSrc);
+    tagIdAttr.setAttribute("id", tagId);
+    tagHeader.textContent = tagHeaderText;
+    tagDesc.textContent = tagDescText;
+    tagCode.textContent = tagCodeExample;
+    tagNote.textContent = tagNoteText;
+  }
 
-for (let j = 0; j < tagArray.length; j++) {
-    tagArray[j].addEventListener("click", function () {
-        let tagDetailObjItems = tagDetailObj[tagId[j]]
+  // Function to handle the close button action
+  function closeButton(e) {
+    let clsbtn = document.getElementById("cls"); // Select the close button
 
-        let tagDetailTemplate = `
-    <div class="closebutton" id="cls">
-    <i class="fa-solid fa-circle-xmark fa-2x" id="cls"></i>
-  </div>
-            <div id="${tagDetailObjItems[0]}" class="tagInfo">
-            <div class="tagHeader marginT20">${tagDetailObjItems[1]}</div>
-            <div class="tagDesc">
-                <div class="tagDectxt marginTRL20">${tagDetailObjItems[2]}</div>
-                <code class="marginT20" style="color: #0e960c">${tagDetailObjItems[3]}</code>
-                <div class="note">${tagDetailObjItems[4]}</div>
-            </div>
-            <div class="tagAttrs">
-                <div class="attrs">
-                    <div class="attrList">
-                        <ul class="attrListUl">
-                            <h3 class="attrListH">Attributes</h3>
-                            <li class="attrListLi" id="test">${tagDetailObjItems[5]}</li>
-                        </ul>
-                    </div>
-                    <div class="attrShow">
-                    <iframe height="300" style="width: 100%;" scrolling="no" title="${tagDetailObjItems[6]}" src="https://codepen.io/onepagehtml/embed/${tagDetailObjItems[7]}?default-tab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
-                    See the Pen <a href="https://codepen.io/onepagehtml/pen/${tagDetailObjItems[7]}">${tagDetailObjItems[6]}</a> by onepagehtml (<a href="https://codepen.io/onepagehtml">@onepagehtml</a>)
-                    on <a href="https://codepen.io">CodePen</a>.
-                  </iframe>                    
-                  </div>
-                </div>
-            </div>
-        </div>
-        `
-        tagDetailTag.innerHTML = tagDetailTemplate
+    if (
+      e.target.id !== undefined &&
+      e.target.id !== null &&
+      e.target.id !== ""
+    ) {
+      tagDetail.style.display = "block"; // Show tag detail section
+      clsbtn.addEventListener("click", () => {
+        tagDetail.style.display = "none"; // Hide tag detail section
+      });
+    }
+  }
 
-        let attrId = this.id
-        if (attrId != null && (attrId != undefined) & (attrId != "")) {
-            tagDetailTag.style.display = "inline-block";
-            let clsbtn = document.getElementById("cls");
-            clsbtn.addEventListener("click", () => {
-                document.getElementById(`${tagId[j]}` + "Attr").remove()
-                tagDetailTag.style.display = "none";
-                clsbtn.remove()
-            })
+  // Function for search functionality
+  function search() {
+    searchInput.addEventListener("keyup", function (e) {
+      let searchValue = e.target.value.trim().toLowerCase(); // Get search value
+
+      // Iterate through all tag elements and handle display
+      Array.from(allTags).forEach(tag => {
+        let tagContent = tag.textContent.trim().toLowerCase();
+        if (tagContent.includes(searchValue)) {
+          tag.style.display = "block"; // Display the tag
+        } else {
+          tag.style.display = "none"; // Hide the tag
         }
-    })
-}
+      });
+    });
+  }
 
+  // Fetch JSON data
+  fetch("../data.json")
+    .then(response => response.json())
+    .then(data => {
+      tagId = data[0]; // Tag IDs
+      tagDetailObj = data[1]; // Tag detail objects
+      attrList = data[2]; // Attribute lists
 
+      // Function to show tag details
+      function showTagDetail(element, index) {
+        createElem("li", tagId[index], "tag", tagId[index], tagsUl);
+        createLiTag.addEventListener("click", function (e) {
+          let tagDetailData = tagDetailObj[index]; // Get tag detail data
+          // Update the displayed tag detail information
+          changeDetailData(tagDetailData[0], tagDetailData[1], tagDetailData[2], tagDetailData[3], tagDetailData[4], tagDetailData[6]);
+          closeButton(e); // Handle close button action
+        });
+      }
 
+      // Iterate through tag IDs and show tag details
+      Object.keys(tagId).forEach((element, index) => {
+        showTagDetail(element, index);
+      });
 
+      search(); // Initialize search functionality
 
-let attrList = {
-    comment: ["None"],
-    doctype: ["None"],
-    a: ["Global Attributes", "download", "href", "hreflang", "media", "ping", "referrerpolicy", "rel", "target", "type"],
-    abbr: ["Global Attributes"],
-    address: ["Global Attributes"],
-    area: ["Global Attributes", "alt", "coords", "download", "href", "hreflang", "media", "referrerpolicy", "rel", "shape", "target", "type"],
-    article: ["Global Attributes"],
-    aside: ["Global Attributes"],
-    audio: ["Global Attributes", "autoplay", "controls", "loop", "muted", "preload", "src"],
-    b: ["Global Attributes"],
-    base: ["Global Attributes", "href", "target"],
-    bdi: ["Global Attributes"],
-    bdo: ["Global Attributes"],
-    blockquote: ["Global Attributes", "cite"],
-    body: ["Global Attributes"],
-    br: ["Global Attributes"],
-    button: ["Global Attributes", "autofocus", "disabled", "form", "formaction", "formenctype", "formmethod", "formnovalidate", "formtarget", "name", "type", "value"],
-    canvas: ["Global Attributes", "height", "width"],
-    caption: ["Global Attributes"],
-    cite: ["Global Attributes"],
-    code: ["Global Attributes"],
-    col: ["Global Attributes", "span"],
-    colegroup: ["Global Attributes", "span"],
-    data: ["Global Attributes", "value"],
-    datalist: ["Global Attributes"],
-    dd: ["Global Attributes"],
-    del: ["Global Attributes", "cite", "datetime"],
-    details: ["Global Attributes", "open"],
-    dfn: ["Global Attributes"],
-    dialog: ["Global Attributes", "open"],
-    div: ["Global Attributes"],
-    dl: ["Global Attributes"],
-    dt: ["Global Attributes"],
-    em: ["Global Attributes"],
-    embed: ["Global Attributes", "height", "src", "type", "width"],
-    fieldset: ["Global Attributes", "disabled", "form", "name"],
-    figcaption: ["Global Attributes"],
-    figure: ["Global Attributes"],
-    footer: ["Global Attributes"],
-    form: ["Global Attributes", "accept-charset", "action", "autocomplete", "enctype", "method", "name", "novalidate", "rel", "target"],
-    h1: ["Global Attributes"],
-    head: ["Global Attributes"],
-    header: ["Global Attributes"],
-    hr: ["Global Attributes"],
-    html: ["Global Attributes", "xmlns"],
-    i: ["Global Attributes"],
-    iframe: ["Global Attributes", "allow", "allowfullscreen", "allowpaymentrequest", "height", "loading", "name", "referrerpolicy", "sandbox", "src", "srcdoc", "width"],
-    img: ["Global Attributes", "alt", "crossorigin", "height", "ismap", "loading", "longdesc", "referrerpolicy", "sizes", "src", "srcset", "usemap", "width"],
-    input: ["Global Attributes", "accept", "alt", "autocomplete", "autofocus", "checked", "dirname", "disabled", "form", "formaction", "formenctype", "formmethod", "formnovalidate", "formtarget", "height", "list", "max", "maxlength", "mix", "minlength", "multiple", "name", "pattern", "placeholder", "readonly", "required", "size", "src", "step", "type", "value", "width"],
-    ins: ["Global Attributes", "cite", "datetime"],
-    kbd: ["Global Attributes"],
-    label: ["Global Attributes", "for", "form"],
-    legend: ["Global Attributes"],
-    li: ["Global Attributes", "value"],
-    link: ["Global Attributes", "crossorigin", "href", "hreflang", "media", "referrerpolicy", "rel", "sizes", "title", "type"],
-    main: ["Global Attributes"],
-    map: ["Global Attributes", "name"],
-    mark: ["Global Attributes"],
-    meta: ["Global Attributes", "charset", "content", "http-equiv", "name"],
-    meter: ["Global Attributes", "form", "high", "low", "max", "min", "optimum", "value"],
-    nav: ["Global Attributes"],
-    noscript: ["Global Attributes"],
-    object: ["Global Attributes", "data", "form", "height", "name", "type", "typemustmatch", "usemap", "width"],
-    ol: ["Global Attributes", "reversed", "start", "type"],
-    optgroup: ["Global Attributes", "disabled", "label"],
-    option: ["Global Attributes", "disabled", "label", "selected", "value"],
-    output: ["Global Attributes", "for", "form", "name"],
-    p: ["Global Attributes"],
-    param: ["Global Attributes", "name", "value"],
-    picture: ["Global Attributes"],
-    pre: ["Global Attributes"],
-    progress: ["Global Attributes", "max", "value"],
-    q: ["Global Attributes", "cite"],
-    rp: ["Global Attributes"],
-    rt: ["Global Attributes"],
-    ruby: ["Global Attributes"],
-    s: ["Global Attributes"],
-    samp: ["Global Attributes"],
-    script: ["Global Attributes", "async", "crossorigin", "defer", "integrity", "nomodule", "referrerpolicy", "src", "type"],
-    section: ["Global Attributes"],
-    select: ["Global Attributes", "autofocus", "disabled", "form", "multiple", "name", "required", "size"],
-    small: ["Global Attributes"],
-    source: ["Global Attributes", "media", "sizes", "src", "srcset", "type"],
-    span: ["Global Attributes"],
-    strong: ["Global Attributes"],
-    style: ["Global Attributes", "media", "type"],
-    sub: ["Global Attributes"],
-    summary: ["Global Attributes"],
-    sup: ["Global Attributes"],
-    svg: ["width", "height"],
-    table: ["Global Attributes"],
-    tbody: ["Global Attributes"],
-    td: ["Global Attributes"],
-    template: ["Global Attributes"],
-    textarea: ["Global Attributes", "autofocus", "cols", "dirname", "disabled", "form", "maxlength", "name", "placeholder", "readonly", "required", "rows", "wrap"],
-    tfoot: ["Global Attributes",],
-    th: ["Global Attributes", "abbr", "colspan", "headers", "rowspan", "scope"],
-    thead: ["Global Attributes"],
-    time: ["Global Attributes", "datetime"],
-    title: ["Global Attributes"],
-    tr: ["Global Attributes"],
-    track: ["Global Attributes", "default", "kind", "label", "src", "srclang"],
-    u: ["Global Attributes"],
-    ul: ["Global Attributes"],
-    var: ["Global Attributes"],
-    video: ["Global Attributes", "autoplay", "controls", "height", "loop", "muted", "poster", "preload", "src", "width"],
-    wbr: ["Global Attributes"],
-}
-
-
-const attrIframeList = {
-    comment: [""],
-    doctype: [""],
-    a: ["https://codepen.io/onepagehtml/embed/MWPomMM?default-tab=html%2Cresult", "https://codepen.io/onepagehtml/embed/wvYedVx?default-tab=html%2Cresult", "https://codepen.io/onepagehtml/embed/XWxggrJ?default-tab=html%2Cresult", "https://codepen.io/onepagehtml/embed/bGmRRbx?default-tab=html%2Cresult", "https://codepen.io/onepagehtml/embed/eYPRRYO?default-tab=html%2Cresult", "https://codepen.io/onepagehtml/embed/dygRRyv?default-tab=html%2Cresult", "https://codepen.io/onepagehtml/embed/jOewwOd?default-tab=html%2Cresult", "https://codepen.io/onepagehtml/embed/xxyrrbO?default-tab=html%2Cresult", "https://codepen.io/onepagehtml/embed/QWZggwY?default-tab=html%2Cresult"],
-    abbr: [""],
-    address: [""],
-    area: ["https://codepen.io/onepagehtml/embed/WNaOOGm?default-tab=html%2Cresult","https://codepen.io/onepagehtml/embed/GRYEENd?default-tab=html%2Cresult","https://codepen.io/onepagehtml/embed/KKGqqNj?default-tab=html%2Cresult","https://codepen.io/onepagehtml/embed/ZEqyyLY?default-tab=html%2Cresult","https://codepen.io/onepagehtml/embed/rNqwwjO?default-tab=html%2Cresult","https://codepen.io/onepagehtml/embed/ExdXXZy?default-tab=html%2Cresult","https://codepen.io/onepagehtml/embed/abRwwJB?default-tab=html%2Cresult","https://codepen.io/onepagehtml/embed/LYgLLWL?default-tab=html%2Cresult","https://codepen.io/onepagehtml/embed/VwEWWpr?default-tab=html%2Cresult","https://codepen.io/onepagehtml/embed/YzJQQZY?default-tab=html%2Cresult","https://codepen.io/onepagehtml/embed/mdzwwWL?default-tab=html%2Cresult"],
-    article : [""],
-    aside: [""],
-    audio: [],
-    b: [""],
-    base: [],
-    bdi: [""],
-    bdo: [""],
-    blockquote: [],
-    body: [""],
-    br: [""],
-    button: [],
-    canvas: [],
-    caption: [""],
-    cite: [""],
-    code: [""],
-    col: [],
-    colegroup: [],
-    data: [],
-    datalist: [""],
-    dd: [""],
-    del: [],
-    details: [],
-    dfn: [""],
-    dialog: [],
-    div: [""],
-    dl: [""],
-    dt: [""],
-    em: [""],
-    embed: [],
-    fieldset: [],
-    figcaption: [""],
-    figure: [""],
-    footer: [""],
-    form: [],
-    h1: [""],
-    head: [""],
-    header: [""],
-    hr: [""],
-    html: [],
-    i: [""],
-    iframe: [],
-    img: [],
-    input: [],
-    ins: [],
-    kbd: [""],
-    label: [],
-    legend: [""],
-    li: [],
-    link: [],
-    main: [""],
-    map: [],
-    mark: [""],
-    meta: [],
-    meter: [],
-    nav: [""],
-    noscript: [""],
-    object: [],
-    ol: [],
-    optgroup: [],
-    option: [""],
-    output: [],
-    p: [""],
-    param: [],
-    picture: [""],
-    pre: [""],
-    progress: [],
-    q: [],
-    rp: [""],
-    rt: [""],
-    ruby: [""],
-    s: [""],
-    samp: [""],
-    script: [],
-    section: [""],
-    select: [],
-    small: [""],
-    source: [],
-    span: [""],
-    strong: [""],
-    style: [],
-    sub: [""],
-    summary: [""],
-    sup: [""],
-    svg: [],
-    table: [""],
-    tbody: [""],
-    td: [""],
-    template: [""],
-    textarea: [],
-    tfoot: [""],
-    th: [],
-    thread: [""],
-    time: [""],
-    title: [],
-    tr: [""],
-    track: [],
-    u: [""],
-    ul: [""],
-    var: [""],
-    video: [],
-    wbr: [""],
-}
-
-
+    });
+});
