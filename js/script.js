@@ -82,6 +82,7 @@ window.addEventListener("DOMContentLoaded", () => {
         } else {
           tag.style.display = "none"; // Hide the tag
         }
+        
       });
     });
   }
