@@ -1,18 +1,50 @@
 * {
   padding: 0;
+  /* margin: 0; */
   box-sizing: border-box;
   font-family: "Courier New", Courier, monospace;
 }
 
-body {
-  background-color: #F7F7F7;
+html, body{
+  min-height: 100%;
 }
 
-html,
 body {
-  width: 100%;
-  height: 100%;
-  margin: 0;
+/*
+* Created with https://www.css-gradient.com
+* Gradient link: https://www.css-gradient.com/?c1=7ca4bb&c2=75eabc&gt=r&gd=dtl
+*/
+/* background: rgba(124, 164, 187, 1.0);
+background: radial-gradient(at left top, rgba(124, 164, 187, 1.0), rgba(117, 234, 188, 1.0)); */
+
+background-color: #C4D7AC;
+
+
+/*
+* Created with https://www.css-gradient.com
+* Gradient link: https://www.css-gradient.com/?c1=b29689&c2=c4d7ac&gt=r&gd=dcc
+*/
+/* background: rgba(178, 150, 137, 1.0);
+background: radial-gradient(at center, rgba(178, 150, 137, 1.0), rgba(196, 215, 172, 1.0)); */
+background: hsla(208, 33%, 21%, 1);
+
+background: linear-gradient(90deg, hsla(208, 33%, 21%, 1) 0%, hsla(211, 36%, 46%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(208, 33%, 21%, 1) 0%, hsla(211, 36%, 46%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(208, 33%, 21%, 1) 0%, hsla(211, 36%, 46%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#243748", endColorstr="#4B749F", GradientType=1 );
+
+}
+
+body::-webkit-scrollbar{
+  display: none;
+}
+
+body{
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 
 /* HEADER */
@@ -24,7 +56,7 @@ body {
 }
 
 .header {
-  background-color: #11c7c7;
+  /* background-color: #11c7c7; */
   color: #ffffff;
   width: 50%;
   text-align: center;
@@ -38,11 +70,18 @@ body {
 
 .header-exp {
   text-align: center;
+  width: 70%;
 }
 
 .header-exp input {
   width: 100%;
+  max-width: 450px;
+  height: 35px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
   text-align: center;
+  box-shadow: rgba(0, 0, 0, 0.44) 0px 3px 8px;
 }
 
 /* CONTENT */
@@ -67,13 +106,13 @@ body {
   width: 20vh;
   font-size: 2.5vh;
   padding: 10px 0;
-  background-color: #4285f4;
   color: #ffffff;
   text-align: center;
   cursor: pointer;
   isolation: isolate;
   box-shadow: 4px 4px 0px 0px #000;
   animation: tag-shadow-reverse 250ms ease forwards;
+  backdrop-filter: hue-rotate(30deg) brightness(0.8);
 }
 
 .tag:hover {
@@ -188,9 +227,10 @@ body {
 }
 
 /* TAG DETAIL DIV */
-.tagDesc{
+.tagDesc {
   width: 100%;
 }
+
 .tagInfo {
   width: 100%;
   height: auto;
@@ -309,7 +349,7 @@ code {
 }
 
 .footer {
-  background-color: #14b2ff;
+  /* background-color: #14b2ff; */
   padding: 1rem;
   text-align: center;
 }
