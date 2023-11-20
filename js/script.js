@@ -20,7 +20,6 @@ window.addEventListener("DOMContentLoaded", () => {
     newIframePenSrc = new URL("https://codepen.io/onepagehtml/pen/"), // Default pen URL
     searchInput = document.getElementById("search"), // Search input element
     attrListUl = document.getElementById("attrListUl");
-
   // Function to create HTML elements
   function createElem(tagName, idName, className, text, appendElem) {
     createLiTag = document.createElement(tagName);
@@ -28,7 +27,7 @@ window.addEventListener("DOMContentLoaded", () => {
     createLiTag.classList.add(className);
     createLiTag.textContent = text;
     appendElem.append(createLiTag);
-    allTags = document.querySelectorAll(`.${className}`); // Get all tag elements
+    allTags = document.querySelectorAll(".tag");// Get all tag elements
   }
 
   // Function to set the iframe source
@@ -40,6 +39,19 @@ window.addEventListener("DOMContentLoaded", () => {
     tagIframe.setAttribute("src", modifiedFrameSrcPath);
   }
 
+  function iframeLoaded() {
+    tagIframe.addEventListener("load", () => {
+console.log("event eklendi");
+    });
+  }
+
+  function eventListenerRemover(tagName, event){
+    tagName.removeEventListener(`${event}`, () =>{
+      console.log("event kaldırıldıç");
+    });
+  }
+
+  
 
   // Function to change the displayed data in the tag detail section
   function changeDetailData(
@@ -51,6 +63,7 @@ window.addEventListener("DOMContentLoaded", () => {
     iframeSrc
   ) {
     setIframeSrc(iframeSrc);
+    iframeLoaded();
     tagIdAttr.setAttribute("id", tagId);
     tagHeader.textContent = tagHeaderText;
     tagDesc.textContent = tagDescText;
@@ -69,14 +82,15 @@ window.addEventListener("DOMContentLoaded", () => {
     ) {
       tagDetail.style.display = "block"; // Show tag detail section
       clsbtn.addEventListener("click", () => {
-        tagDetail.style.display = "none"; // Hide tag detail section
-
-        let allAttr = document.querySelectorAll(".attr-elem")
-        if(allAttr.length > 0){
-          console.log("all attr if")
-            allAttr.forEach(attr => {
-              attr.remove();
-            });
+        // eventListenerRemover(tagIframe, "load");
+          tagDetail.style.display = "none"; // Hide tag detail section
+        
+        let allAttr = document.querySelectorAll(".attr-elem");
+        if (allAttr.length > 0) {
+          console.log("all attr if");
+          allAttr.forEach((attr) => {
+            attr.remove();
+          });
         }
       });
     }
@@ -86,7 +100,6 @@ window.addEventListener("DOMContentLoaded", () => {
   function search() {
     searchInput.addEventListener("keyup", function (e) {
       let searchValue = e.target.value.trim().toLowerCase(); // Get search value
-
       // Iterate through all tag elements and handle display
       Array.from(allTags).forEach((tag) => {
         let tagContent = tag.textContent.trim().toLowerCase();
@@ -110,7 +123,13 @@ window.addEventListener("DOMContentLoaded", () => {
       // function createElem(tagName, idName, className, text, appendElem) {
 
       function setAttrList(index) {
-        createElem("li", tagId[index]+`Attr${index}`, "attr-elem", attrList[index], attrListUl);
+        createElem(
+          "li",
+          tagId[index] + `Attr${index}`,
+          "attr-elem",
+          attrList[index],
+          attrListUl
+        );
       }
 
       // Function to show tag details
@@ -136,7 +155,6 @@ window.addEventListener("DOMContentLoaded", () => {
       Object.keys(tagId).forEach((element, index) => {
         showTagDetail(element, index);
       });
-
       search(); // Initialize search functionality
     });
 });
