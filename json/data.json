@@ -110,18 +110,12 @@
       "<a href='URL'>Text</a>",
       "Note:  If the <a> tag has no href attribute, it is only a placeholder for a hyperlink.",
       "download<br>href<br>hreflang<br>media<br>ping<br>referrerpolicy<br>rel<br>target<br>type<br>",
-      "a",
       "QWVKWpj"
     ],
     [
       "abbrAttr",
       "abbr",
-      "The <abbr> tag defines an abbreviation or an acronym, like \"HTML\"",
-      "CSS",
-      "Mr.",
-      "Dr.",
-      "ASAP",
-      "ATM",
+      "The <abbr> tag defines an abbreviation or an acronym, like \"HTML\" \"CSS\" \"Mr.\" \"Dr.\" \"ASAP\" \"ATM\"",
       "<abbr></abbr>",
       "Note:  Use the global title attribute to show the description for the abbreviation/acronym when you mouse over the element.",
       "abbr",
@@ -1021,10 +1015,10 @@
   ],
   [
     [
-      "None"
+      "Global Attributes"
     ],
     [
-      "None"
+      "Global Attributes"
     ],
     [
       "Global Attributes",
@@ -1568,5 +1562,10 @@
       "Global Attributes"
     ]
   ],
-  []
+  [
+    [
+      "YzBRvpb",
+      "jOdQKyB"
+    ]
+  ]
 ]

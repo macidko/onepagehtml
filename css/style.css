@@ -5,21 +5,22 @@
   font-family: "Courier New", Courier, monospace;
 }
 
-html, body{
+html,
+body {
   min-height: 100%;
 }
 
 body {
   background-color: #e5e5f7;
   background-size: 20px 20px;
-  background-image:  repeating-linear-gradient(0deg, rgba(68, 77, 247, 0.8), rgba(68, 77, 247, 0.8) 1px, rgba(229, 229, 247, 0.8) 1px, rgba(229, 229, 247, 0.8));
+  background-image: repeating-linear-gradient(0deg, rgba(68, 77, 247, 0.8), rgba(68, 77, 247, 0.8) 1px, rgba(229, 229, 247, 0.8) 1px, rgba(229, 229, 247, 0.8));
 }
 
-body::-webkit-scrollbar{
+body::-webkit-scrollbar {
   display: none;
 }
 
-body{
+body {
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
@@ -107,7 +108,7 @@ body{
     border-radius: 10px;
     background-color: dimgrey;
   }
-  
+
   to {
     transform: translate(-3px, -3px);
     box-shadow: 7px 7px 0px 0px #000;
@@ -123,7 +124,7 @@ body{
     border-radius: 0px;
     background-color: crimson;
   }
-  
+
   to {
     transform: translate(0px, 0px);
     box-shadow: 4px 4px 0px 0px #000;
@@ -314,20 +315,25 @@ code {
 }
 
 #attrListUl {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
   padding: 1rem;
   margin: 0;
   list-style-type: none;
 }
 
 #attrListUl li {
+  flex: 1;
   cursor: pointer;
-  margin: 1rem 0;
-  list-style-type: disc;
+  background-color: red;
+  text-align: center;
 }
 
-.attrListH {
-  margin-block-start: 0;
-  margin-block-end: 0;
+.attrList h3 {
+  margin: 0;
 }
 
 .attrListLi {

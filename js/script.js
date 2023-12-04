@@ -27,7 +27,7 @@ window.addEventListener("DOMContentLoaded", () => {
     createLiTag.classList.add(className);
     createLiTag.textContent = text;
     appendElem.append(createLiTag);
-    allTags = document.querySelectorAll(".tag");// Get all tag elements
+    allTags = document.querySelectorAll(".tag"); // Get all tag elements
   }
 
   // Function to set the iframe source
@@ -40,18 +40,14 @@ window.addEventListener("DOMContentLoaded", () => {
   }
 
   function iframeLoaded() {
-    tagIframe.addEventListener("load", () => {
-console.log("event eklendi");
-    });
+    tagIframe.addEventListener("load", () => {});
   }
 
-  function eventListenerRemover(tagName, event){
-    tagName.removeEventListener(`${event}`, () =>{
+  function eventListenerRemover(tagName, event) {
+    tagName.removeEventListener(`${event}`, () => {
       console.log("event kaldırıldıç");
     });
   }
-
-  
 
   // Function to change the displayed data in the tag detail section
   function changeDetailData(
@@ -69,6 +65,7 @@ console.log("event eklendi");
     tagDesc.textContent = tagDescText;
     tagCode.textContent = tagCodeExample;
     tagNote.textContent = tagNoteText;
+    console.log(iframeSrc);
   }
 
   // Function to handle the close button action
@@ -83,8 +80,8 @@ console.log("event eklendi");
       tagDetail.style.display = "block"; // Show tag detail section
       clsbtn.addEventListener("click", () => {
         // eventListenerRemover(tagIframe, "load");
-          tagDetail.style.display = "none"; // Hide tag detail section
-        
+        tagDetail.style.display = "none"; // Hide tag detail section
+
         let allAttr = document.querySelectorAll(".attr-elem");
         if (allAttr.length > 0) {
           console.log("all attr if");
@@ -119,17 +116,33 @@ console.log("event eklendi");
       tagId = data[0]; // Tag IDs
       tagDetailObj = data[1]; // Tag detail objects
       attrList = data[2]; // Attribute lists
+      let attrIframe = data [3][0];
 
       // function createElem(tagName, idName, className, text, appendElem) {
 
       function setAttrList(index) {
-        createElem(
-          "li",
-          tagId[index] + `Attr${index}`,
-          "attr-elem",
-          attrList[index],
-          attrListUl
-        );
+        let elemAttrs = attrList[index];
+        elemAttrs.forEach((element, elemIndex) => {
+          createElem(
+            "li",
+            tagId[index] + `Attr${index}`,
+            "attr-elem",
+            element,
+            attrListUl
+          );
+          createLiTag.addEventListener("click", () => {
+            setIframeSrc(attrIframe[elemIndex])
+          });
+        });
+        // elemAttrs.forEach(element => {
+        //   createElem(
+        //     "li",
+        //     tagId[index] + `Attr${index}`,
+        //     "attr-elem",
+        //     attrList[index],
+        //     attrListUl
+        //   );
+        // });
       }
 
       // Function to show tag details
