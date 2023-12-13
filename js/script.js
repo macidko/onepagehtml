@@ -19,7 +19,9 @@ window.addEventListener("DOMContentLoaded", () => {
     ), // Default iframe URL
     newIframePenSrc = new URL("https://codepen.io/onepagehtml/pen/"), // Default pen URL
     searchInput = document.getElementById("search"), // Search input element
-    attrListUl = document.getElementById("attrListUl");
+    attrListUl = document.getElementById("attrListUl"),
+    loading = document.getElementById("loading");
+
   // Function to create HTML elements
   function createElem(tagName, idName, className, text, appendElem) {
     createLiTag = document.createElement(tagName);
@@ -37,11 +39,20 @@ window.addEventListener("DOMContentLoaded", () => {
     newIframePenSrc.pathname = "/onepagehtml/pen/" + iframeSrcPath;
     modifiedFrameSrcPath = newIframeSrc.toString();
     tagIframe.setAttribute("src", modifiedFrameSrcPath);
+    tagIframe.addEventListener("load", () => {
+      loading.style.display = "none";
+    });
   }
 
-  function iframeLoaded() {
-    tagIframe.addEventListener("load", () => {});
-  }
+  // function loadingAnimationNone() {
+  //   tagIframe.addEventListener("load", () => {
+  //     loading.style.display = "none";
+  //   });
+  // }
+
+  // function loadingAnimationBlock(){
+  //   loading.style.display = "block";
+  // }
 
   function eventListenerRemover(tagName, event) {
     tagName.removeEventListener(`${event}`, () => {
@@ -59,7 +70,7 @@ window.addEventListener("DOMContentLoaded", () => {
     iframeSrc
   ) {
     setIframeSrc(iframeSrc);
-    iframeLoaded();
+    // loadingAnimationNone();
     tagIdAttr.setAttribute("id", tagId);
     tagHeader.textContent = tagHeaderText;
     tagDesc.textContent = tagDescText;
@@ -89,6 +100,8 @@ window.addEventListener("DOMContentLoaded", () => {
             attr.remove();
           });
         }
+
+        // loadingAnimationBlock();
       });
     }
   }
@@ -116,7 +129,7 @@ window.addEventListener("DOMContentLoaded", () => {
       tagId = data[0]; // Tag IDs
       tagDetailObj = data[1]; // Tag detail objects
       attrList = data[2]; // Attribute lists
-      let attrIframe = data [3][0];
+      let attrIframe = data[3][0];
 
       // function createElem(tagName, idName, className, text, appendElem) {
 
@@ -131,7 +144,8 @@ window.addEventListener("DOMContentLoaded", () => {
             attrListUl
           );
           createLiTag.addEventListener("click", () => {
-            setIframeSrc(attrIframe[elemIndex])
+            setIframeSrc(attrIframe[elemIndex]);
+            loading.style.display = "block";
           });
         });
         // elemAttrs.forEach(element => {
@@ -149,6 +163,7 @@ window.addEventListener("DOMContentLoaded", () => {
       function showTagDetail(element, index) {
         createElem("li", tagId[index], "tag", tagId[index], tagsUl);
         createLiTag.addEventListener("click", function (e) {
+          loading.style.display = "block";
           let tagDetailData = tagDetailObj[index]; // Get tag detail data
           // Update the displayed tag detail information
           changeDetailData(
