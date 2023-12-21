@@ -1015,7 +1015,15 @@
   ],
   [
     [
-      "Global Attributes"
+      "download",
+      "href",
+      "hreflang",
+      "media",
+      "ping",
+      "referrerpolicy",
+      "rel",
+      "target",
+      "type"
     ],
     [
       "Global Attributes"
@@ -1033,15 +1041,8 @@
       "type"
     ],
     [
-      "Global Attributes"
-    ],
-    [
-      "Global Attributes"
-    ],
-    [
-      "Global Attributes",
       "alt",
-      "coords",
+      "coors",
       "download",
       "href",
       "hreflang",
@@ -1059,7 +1060,6 @@
       "Global Attributes"
     ],
     [
-      "Global Attributes",
       "autoplay",
       "controls",
       "loop",
@@ -1071,7 +1071,6 @@
       "Global Attributes"
     ],
     [
-      "Global Attributes",
       "href",
       "target"
     ],
@@ -1079,14 +1078,31 @@
       "Global Attributes"
     ],
     [
-      "Global Attributes"
+      "dir"
     ],
     [
-      "Global Attributes",
       "cite"
     ],
     [
       "Global Attributes"
+    ],
+    [
+      "Global Attributes"
+    ],
+    [
+      "autofocus",
+      "disabled",
+      "form",
+      "formaction",
+      "formenctype",
+      "formmethod",
+      "formnovalidate",
+      "formtarget",
+      "popovertarget",
+      "popovertargetaction",
+      "name",
+      "type",
+      "value"
     ],
     [
       "Global Attributes"
@@ -1564,8 +1580,165 @@
   ],
   [
     [
-      "YzBRvpb",
-      "jOdQKyB"
-    ]
+      "oNVvJaQ",
+      "RwdbEem",
+      "GReKPYV",
+      "wvOwRQK",
+      "QWoLzJK",
+      "ZEPzVmJ",
+      "abMoPQG",
+      "qBvWLQM",
+      "YzgKdRg"
+    ],
+    [
+      "Global Attr"
+    ],
+    [
+      "Global Attr"
+    ],
+    [
+      "OJqLrrP",
+      "QWoLzzK",
+      "BabBMQL",
+      "KKEPbba",
+      "ZEPzVVJ",
+      "zYbOyyR",
+      "JjzPwwB",
+      "qBvWLLM",
+      "oNVvJJQ",
+      "dyrbwww",
+      "VwRZqqg"
+    ],
+    [],
+    [],
+    [
+      "mdobaaZ",
+      "gOEYZqY",
+      "PoLYXVo",
+      "BabBvMN",
+      "QWoLzYK",
+      "KKEPbJa"
+    ],
+    [],
+    [
+      "eYXObxe",
+      "zYbOyeW"
+    ],
+    [],
+    [
+      "oNVvJmJ"
+    ],
+    [
+      "vYPBvbw"
+    ],
+    [],
+    [],
+    [
+      "GReKPeK",
+      "OJqLrqV",
+      "ExMYGML",
+      "YzgKdgM",
+      "RwdbEdz",
+      "BabBvEo",
+      "rNRBobp",
+      "YzgKdMM",
+      "mdobagN",
+      "vYPBbrL",
+      "WNmeLBG",
+      "poYzqmP",
+      "dyrbwEr"
+    ],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    []
   ]
 ]

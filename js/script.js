@@ -129,11 +129,12 @@ window.addEventListener("DOMContentLoaded", () => {
       tagId = data[0]; // Tag IDs
       tagDetailObj = data[1]; // Tag detail objects
       attrList = data[2]; // Attribute lists
-      let attrIframe = data[3][0];
+
 
       // function createElem(tagName, idName, className, text, appendElem) {
 
       function setAttrList(index) {
+        let attrIframe = data[3][index];
         let elemAttrs = attrList[index];
         elemAttrs.forEach((element, elemIndex) => {
           createElem(
@@ -145,6 +146,7 @@ window.addEventListener("DOMContentLoaded", () => {
           );
           createLiTag.addEventListener("click", () => {
             setIframeSrc(attrIframe[elemIndex]);
+            console.log(attrIframe[elemIndex]);
             loading.style.display = "block";
           });
         });
