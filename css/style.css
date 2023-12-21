@@ -328,7 +328,7 @@ code {
 #attrListUl li {
   flex: 1;
   cursor: pointer;
-  background-color: red;
+  /* background-color: red; */
   text-align: center;
 }
 
