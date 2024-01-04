@@ -21,7 +21,6 @@ window.addEventListener("DOMContentLoaded", () => {
     searchInput = document.getElementById("search"), // Search input element
     attrListUl = document.getElementById("attrListUl"),
     loading = document.getElementById("loading");
-
   // Function to create HTML elements
   function createElem(tagName, idName, className, text, appendElem) {
     createLiTag = document.createElement(tagName);
@@ -130,7 +129,6 @@ window.addEventListener("DOMContentLoaded", () => {
       tagDetailObj = data[1]; // Tag detail objects
       attrList = data[2]; // Attribute lists
 
-
       // function createElem(tagName, idName, className, text, appendElem) {
 
       function setAttrList(index) {
@@ -162,8 +160,10 @@ window.addEventListener("DOMContentLoaded", () => {
       }
 
       // Function to show tag details
-      function showTagDetail(element, index) {
+      function showTagDetail(element, index) 
+      {
         createElem("li", tagId[index], "tag", tagId[index], tagsUl);
+        
         createLiTag.addEventListener("click", function (e) {
           loading.style.display = "block";
           let tagDetailData = tagDetailObj[index]; // Get tag detail data

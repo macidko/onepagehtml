@@ -1,86 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--CSS-->
+    <link rel="stylesheet" href="css/style.css" crossorigin="anonymous" />
+    <!-- NORMALIZE CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- FONT AWESOME -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Document</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <!--CSS-->
-  <link rel="stylesheet" href="css/style.css" crossorigin="anonymous" />
-  <!-- NORMALIZE CSS -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
-    integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <!-- FONT AWESOME -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
-    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <title>Document</title>
-</head>
-
-<body>
-  <!--HEADER *START*-->
-  <header class="header-cont">
-    <div class="header">
-      <h1 class="h-text">ONE PAGE HTML</h1>
-    </div>
-    <nav class="header-exp">
-      <p class="explanation">
-        You can find every HTML tag and tag attributes.
+  <body>
+    <!--HEADER *START*-->
+    <header class="header-cont">
+      <div class="header">
+        <h1 class="h-text">ONE PAGE HTML</h1>
+      </div>
+      <nav class="header-exp">
+        <p class="explanation">
+          You can find every HTML tag and tag attributes.
+        </p>
+        <input type="text" name="search" id="search" placeholder="Search Tag" />
+      </nav>
+    </header>
+    <!--HEADER *END*-->
+    <main class="main">
+      <!--CONTENT *START*-->
+      <section class="content-cont">
+        <div class="content">
+          <ul class="tags" id="tags"></ul>
+        </div>
+      </section>
+      <!--CONTENT *END*-->
+      <!-- ATTRIBUTE DETAIL *START* -->
+      <div id="tagDetails">
+        <!-- ATTRIBUTE DETAIL TEMPLATE -->
+        <div class="closebutton" id="cls">
+          <i class="fa-solid fa-circle-xmark fa-2x" id="cls"></i>
+        </div>
+        <div id="" class="tagInfo">
+          <div class="tagHeader"></div>
+          <div class="tagDesc">
+            <div class="tagDecTxt marginTRL20"></div>
+            <code class="marginT20 code" style="color: #0e960c"></code>
+            <div class="note"></div>
+          </div>
+          <div class="tagAttrs">
+            <div class="attrList">
+              <h3>Attributes</h3>
+              <ul id="attrListUl"></ul>
+            </div>
+            <div id="attrShow">
+              <div id="loading">
+                <i class="fa-solid fa-spinner fa-spin fa-2xl"></i>
+              </div>
+              <iframe
+                id="iframe"
+                height="350"
+                width="100%"
+                scrolling="no"
+                title=""
+                src="https://codepen.io/onepagehtml/embed/default-tab=html%2Cresult"
+                frameborder="no"
+                loading="lazy"
+                allowtransparency="true"
+                allowfullscreen="true"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- ATTRIBUTE DETAIL *END* -->
+    </main>
+    <!--FOOTER *START*-->
+    <footer class="footer">
+      <a href="https://www.github.com/macidko" target="_blank">
+        Created by macidko 💀
+      </a>
+      <p>
+        "This page has no revenue concern. It aims to provide a basic overview
+        of HTML. The sources used have been specified."
       </p>
-      <input type="text" name="search" id="search" placeholder="Search Tag">
-    </nav>
-  </header>
-  <!--HEADER *END*-->
-  <main class="main">
-    <!--CONTENT *START*-->
-    <section class="content-cont">
-      <div class="content">
-        <ul class="tags" id="tags"></ul>
-      </div>
-    </section>
-    <!--CONTENT *END*-->
-    <!-- ATTRIBUTE DETAIL *START* -->
-    <div id="tagDetails">
-      <!-- ATTRIBUTE DETAIL TEMPLATE -->
-      <div class="closebutton" id="cls">
-        <i class="fa-solid fa-circle-xmark fa-2x" id="cls"></i>
-      </div>
-      <div id="" class="tagInfo">
-        <div class="tagHeader"></div>
-        <div class="tagDesc">
-          <div class="tagDecTxt marginTRL20"></div>
-          <code class="marginT20 code" style="color: #0e960c"></code>
-          <div class="note"></div>
-        </div>
-        <div class="tagAttrs">
-          <div class="attrList">
-            <h3>Attributes</h3>
-            <ul id="attrListUl">
-            </ul>
-          </div>
-          <div id="attrShow">
-            <div id="loading"><i class="fa-solid fa-spinner fa-spin fa-2xl"></i></div>
-            <iframe id="iframe" height="350" width="100%" scrolling="no" title=""
-              src="https://codepen.io/onepagehtml/embed/default-tab=html%2Cresult" frameborder="no" loading="lazy"
-              allowtransparency="true" allowfullscreen="true"></iframe>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- ATTRIBUTE DETAIL *END* -->
-  </main>
-  <!--FOOTER *START*-->
-  <footer class="footer">
-    <a href="https://www.github.com/macidko" target="_blank">
-      Created by macidko 💀
-    </a>
-    <p>"This page has no revenue concern. It aims to provide a basic overview of HTML. The sources used have been
-      specified."</p>
-    <p>Source: <a href="https://www.w3schools.com/">W3Schools.com</a></p>
-  </footer>
-  <!--FOOTER *END*-->
-  <script src="js/script.js" type="text/javascript" crossorigin="anonymous"></script>
-</body>
-
+      <p>Source: <a href="https://www.w3schools.com/">W3Schools.com</a></p>
+    </footer>
+    <!--FOOTER *END*-->
+    <script
+      src="js/script.js"
+      type="text/javascript"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
