@@ -25,6 +25,10 @@ body {
   scrollbar-width: none;
 }
 
+a {
+  text-decoration: none;
+}
+
 /* HEADER */
 .header-cont {
   display: flex;
